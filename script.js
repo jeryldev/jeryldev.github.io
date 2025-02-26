@@ -14,4 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  // Initialize the fun fact button
+  const funFactButton = document.getElementById("fun-fact-btn");
+  const funFact = document.getElementById("fun-fact");
+
+  if (funFactButton && funFact) {
+    funFactButton.addEventListener("click", function () {
+      if (funFact.classList.contains("hidden")) {
+        funFact.classList.remove("hidden");
+        funFactButton.textContent = "Hide Fun Fact";
+      } else {
+        funFact.classList.add("hidden");
+        funFactButton.textContent = "Click for a Fun Fact!";
+      }
+    });
+  }
 });
