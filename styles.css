@@ -59,7 +59,7 @@ section h2 {
   border-bottom: 2px solid skyblue;
 }
 
-/* About section styles */
+/* About section */
 .about-content {
   display: flex;
   flex-direction: column;
@@ -136,6 +136,33 @@ section h2 {
   background-color: deepskyblue;
 }
 
+/* Hobbies section */
+.hobbies-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.hobby-card {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 4px;
+  border-left: 4px solid skyblue;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-card h3 {
+  color: steelblue;
+  margin-bottom: 10px;
+}
+
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   .about-content {
@@ -150,5 +177,9 @@ section h2 {
 
   .about-text {
     flex: 2;
+  }
+
+  .hobbies-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
