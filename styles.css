@@ -1,10 +1,10 @@
 :root {
-  --primary: skyblue; /* Main accent color */
-  --primary-hover: deepskyblue; /* Hover state */
-  --secondary: steelblue; /* Headings and accent text */
-  --light-bg: aliceblue; /* Card background */
-  --dark-bg: lightslategray; /* Footer background */
-  --text: black; /* Main text color */
+  --primary: #3aaab8; /* Main accent color */
+  --primary-hover: #4ecdc4; /* Hover state */
+  --secondary: #2a7886; /* Headings and accent text */
+  --light-bg: #e8f7f9; /* Card background */
+  --dark-bg: #264653; /* Footer background */
+  --text: #333333; /* Main text color */
   --text-light: white; /* Light text (for dark backgrounds) */
 }
 
