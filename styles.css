@@ -1,3 +1,13 @@
+:root {
+  --primary: #3aaab8; /* Main accent color */
+  --primary-hover: #4ecdc4; /* Hover state */
+  --secondary: #2a7886; /* Headings and accent text */
+  --light-bg: #e8f7f9; /* Card background */
+  --dark-bg: #264653; /* Footer background */
+  --text: #333333; /* Main text color */
+  --text-light: white; /* Light text (for dark backgrounds) */
+}
+
 /* Global styles */
 * {
   margin: 0;
@@ -6,16 +16,16 @@
 }
 
 body {
-  color: black;
-  background-color: white;
-  font-family: Consolas, Monaco, "Andale Mono", "Lucida Console", monospace;
+  color: var(--text);
+  background-color: var(--text-light);
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
 }
 
 /* Header styles */
 header {
-  background-color: skyblue;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text-light);
   padding: 20px 0;
 }
 
@@ -26,18 +36,17 @@ header .container {
 }
 
 header h1 {
-  margin-bottom: 4px;
   text-align: center;
 }
 
 nav ul {
-  displa: flex;
+  display: flex;
   list-style: none;
   gap: 20px;
 }
 
 nav a {
-  color: white;
+  color: var(--text-light);
   font-weight: 500;
   text-decoration: none;
 }
@@ -50,13 +59,13 @@ nav a:hover {
 /* Section titles */
 section h2 {
   text-align: center;
-  color: steelblue;
+  color: var(--secondary);
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid skyblue;
-  border-bottom: 2px solid skyblue;
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* About section */
@@ -65,6 +74,7 @@ section h2 {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 0 30px;
 }
 
 .profile-image {
@@ -76,7 +86,7 @@ section h2 {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 5px solid skyblue;
+  border: 5px solid var(--primary);
   transition: transform 0.3s ease;
   max-width: 250px;
   aspect-ratio: 1/1;
@@ -92,7 +102,7 @@ section h2 {
 }
 
 .about-text h3 {
-  color: steelblue;
+  color: var(--secondary);
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 }
@@ -107,13 +117,13 @@ section h2 {
 }
 
 .about-text a {
-  color: steelblue;
+  color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .about-text a:hover {
-  color: deepskyblue;
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -122,8 +132,8 @@ section h2 {
 }
 
 #fun-fact-btn {
-  background-color: skyblue;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text-light);
   border: none;
   padding: 10px 15px;
   border-radius: 4px;
@@ -133,21 +143,22 @@ section h2 {
 }
 
 #fun-fact-btn:hover {
-  background-color: deepskyblue;
+  background-color: var(--primary-hover);
 }
 
 /* Hobbies section */
-.hobbies-container {
+.hobbies-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding: 0 30px;
 }
 
 .hobby-card {
-  background-color: aliceblue;
+  background-color: var(--light-bg);
   padding: 20px;
   border-radius: 4px;
-  border-left: 4px solid skyblue;
+  border-left: 4px solid var(--primary);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -159,15 +170,34 @@ section h2 {
 }
 
 .hobby-card h3 {
-  color: steelblue;
+  color: var(--secondary);
   margin-bottom: 10px;
 }
 
 /* Contact section */
-.contact-info {
+.contact-content {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 30px;
+}
+
+.platform-intro {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.contact-link {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
 
 .email {
@@ -176,13 +206,13 @@ section h2 {
 }
 
 .email a {
-  color: steelblue;
+  color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .email a:hover {
-  color: deepskyblue;
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -197,8 +227,8 @@ section h2 {
 .social-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: skyblue;
-  color: white !important;
+  background-color: var(--primary);
+  color: var(--text-light) !important;
   border-radius: 4px;
   text-decoration: none;
   transition:
@@ -207,15 +237,15 @@ section h2 {
 }
 
 .social-link:hover {
-  background-color: deepskyblue;
+  background-color: var(--primary-hover);
   transform: translateY(-2px);
   text-decoration: none !important;
 }
 
 /* Footer section */
 footer {
-  background-color: lightslategray;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -237,7 +267,7 @@ footer p {
 }
 
 footer a {
-  color: white;
+  color: var(--text-light);
   text-decoration: underline;
   transition: opacity 0.3s ease;
 }
@@ -262,13 +292,19 @@ footer a:hover {
     flex: 2;
   }
 
-  .hobbies-container {
+  .hobbies-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 480px) {
+  .contact-content,
+  .about-content,
+  .hobbies-content {
+    padding: 0 15px;
+  }
+
   .social-links {
     flex-direction: column;
     align-items: center;
