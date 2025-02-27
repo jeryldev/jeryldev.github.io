@@ -1,3 +1,13 @@
+:root {
+  --primary: skyblue; /* Main accent color */
+  --primary-hover: deepskyblue; /* Hover state */
+  --secondary: steelblue; /* Headings and accent text */
+  --light-bg: aliceblue; /* Card background */
+  --dark-bg: lightslategray; /* Footer background */
+  --text: black; /* Main text color */
+  --text-light: white; /* Light text (for dark backgrounds) */
+}
+
 /* Global styles */
 * {
   margin: 0;
@@ -6,16 +16,16 @@
 }
 
 body {
-  color: black;
-  background-color: white;
+  color: var(--text);
+  background-color: var(--text-light);
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
 }
 
 /* Header styles */
 header {
-  background-color: skyblue;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text-light);
   padding: 20px 0;
 }
 
@@ -36,7 +46,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: var(--text-light);
   font-weight: 500;
   text-decoration: none;
 }
@@ -49,13 +59,13 @@ nav a:hover {
 /* Section titles */
 section h2 {
   text-align: center;
-  color: steelblue;
+  color: var(--secondary);
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid skyblue;
-  border-bottom: 2px solid skyblue;
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* About section */
@@ -76,7 +86,7 @@ section h2 {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 5px solid skyblue;
+  border: 5px solid var(--primary);
   transition: transform 0.3s ease;
   max-width: 250px;
   aspect-ratio: 1/1;
@@ -92,7 +102,7 @@ section h2 {
 }
 
 .about-text h3 {
-  color: steelblue;
+  color: var(--secondary);
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 }
@@ -107,13 +117,13 @@ section h2 {
 }
 
 .about-text a {
-  color: steelblue;
+  color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .about-text a:hover {
-  color: deepskyblue;
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -122,8 +132,8 @@ section h2 {
 }
 
 #fun-fact-btn {
-  background-color: skyblue;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text-light);
   border: none;
   padding: 10px 15px;
   border-radius: 4px;
@@ -133,7 +143,7 @@ section h2 {
 }
 
 #fun-fact-btn:hover {
-  background-color: deepskyblue;
+  background-color: var(--primary-hover);
 }
 
 /* Hobbies section */
@@ -145,10 +155,10 @@ section h2 {
 }
 
 .hobby-card {
-  background-color: aliceblue;
+  background-color: var(--light-bg);
   padding: 20px;
   border-radius: 4px;
-  border-left: 4px solid skyblue;
+  border-left: 4px solid var(--primary);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -160,7 +170,7 @@ section h2 {
 }
 
 .hobby-card h3 {
-  color: steelblue;
+  color: var(--secondary);
   margin-bottom: 10px;
 }
 
@@ -179,14 +189,14 @@ section h2 {
 }
 
 .contact-link {
-  color: steelblue;
+  color: var(--secondary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: deepskyblue;
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -196,13 +206,13 @@ section h2 {
 }
 
 .email a {
-  color: steelblue;
+  color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .email a:hover {
-  color: deepskyblue;
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -217,8 +227,8 @@ section h2 {
 .social-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: skyblue;
-  color: white !important;
+  background-color: var(--primary);
+  color: var(--text-light) !important;
   border-radius: 4px;
   text-decoration: none;
   transition:
@@ -227,15 +237,15 @@ section h2 {
 }
 
 .social-link:hover {
-  background-color: deepskyblue;
+  background-color: var(--primary-hover);
   transform: translateY(-2px);
   text-decoration: none !important;
 }
 
 /* Footer section */
 footer {
-  background-color: lightslategray;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -257,7 +267,7 @@ footer p {
 }
 
 footer a {
-  color: white;
+  color: var(--text-light);
   text-decoration: underline;
   transition: opacity 0.3s ease;
 }
