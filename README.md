@@ -63,13 +63,15 @@ This project meets all the requirements for the CMSC 207 Mini-Project:
 
 ### Challenges I Faced:
 
-Picking colors for the color scheme was difficult than I expected. I used websites like [Coolors](https://coolors.co/) and similar color palette generators to help me find colors that look good together.
+Picking colors for the color scheme was more difficult than I expected. I used websites like [Coolors](https://coolors.co/) and similar color palette generators to help me find colors that look good together.
 
 Getting the page to scroll smoothly when clicking menu items took quite a bit of testing. I had to try different approaches until I found one that worked well on different web browsers.
 
 Making the website look good on both phones and computers was challenging. I had to adjust the layout multiple times to make sure everything looked nice whether you're viewing on a small screen or a large one.
 
 I also ran into some browser differences - for example, I found that some CSS properties (like `aspect-ratio: 1/1` for the profile picture) don't work the same way in Firefox as they do in other browsers.
+
+Setting up GitHub Pages for hosting was another challenge. I followed the [GitHub Pages documentation](https://docs.github.com/en/pages/quickstart) to figure out how to properly deploy my site.
 
 ### What I Learned:
 
