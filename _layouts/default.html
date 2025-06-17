@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
+        <nav>
+          <ul>
+            <li><a href="{{ '/#about' | relative_url }}">About Me</a></li>
+            <li><a href="{{ '/#hobbies' | relative_url }}">Hobbies & Interests</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/#contact' | relative_url }}">Contact Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 {{ site.title }}</p>
+        <p class="footer-credit">Built with HTML, CSS, JavaScript, and Jekyll</p>
+      </div>
+    </footer>
+  </body>
+</html>
