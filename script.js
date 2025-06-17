@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Smooth scroll effect
-  const navMenuButtons = document.querySelectorAll("nav a");
+  // Smooth scroll effect for anchor links only
+  const navMenuButtons = document.querySelectorAll("nav a[href^='#']");
   navMenuButtons.forEach((button) => {
     button.addEventListener("click", function (e) {
       e.preventDefault();
@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
 
-      window.scrollTo({
-        top: targetElement.offsetTop - 20,
-        behavior: "smooth",
-      });
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 20,
+          behavior: "smooth",
+        });
+      }
     });
   });
 

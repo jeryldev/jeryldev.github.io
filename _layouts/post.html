@@ -24,19 +24,28 @@ layout: default
 <style>
   .blog-post-single {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
   }
   
   .post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    background: none;
+    text-align: center;
   }
   
   .post-header h1 {
-    color: #2c3e50;
+    color: var(--secondary);
     margin-bottom: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
   }
   
   .post-meta {
@@ -126,12 +135,13 @@ layout: default
   }
   
   .back-to-blog {
-    color: #3498db;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
   }
   
   .back-to-blog:hover {
+    color: var(--primary-hover);
     text-decoration: underline;
   }
 </style>
