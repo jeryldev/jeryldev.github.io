@@ -1,0 +1,29 @@
+# Jekyll configuration for GitHub Pages
+title: Jeryl Donato Estopace
+description: Software Engineer | Elixir/Phoenix Developer
+url: "https://jeryldev.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null  # We're using custom CSS
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Jeryl Donato Estopace"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
