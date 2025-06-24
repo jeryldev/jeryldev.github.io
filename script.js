@@ -5,20 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
       
-      // Check if it's an anchor link (contains # and points to current page)
-      if (href && href.includes('#') && !href.includes('/blog/')) {
-        e.preventDefault();
-        
+      // Check if it's an anchor link (contains #)
+      if (href && href.includes('#')) {
         // Extract the hash part (everything after #)
         const hash = href.substring(href.indexOf('#'));
         const targetElement = document.querySelector(hash);
 
+        // If target element exists on current page, smooth scroll
         if (targetElement) {
+          e.preventDefault();
           window.scrollTo({
             top: targetElement.offsetTop - 20,
             behavior: "smooth",
           });
         }
+        // If target doesn't exist, let browser navigate normally (for cross-page links)
       }
     });
   });
