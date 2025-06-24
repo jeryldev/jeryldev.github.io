@@ -14,8 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // If target element exists on current page, smooth scroll
         if (targetElement) {
           e.preventDefault();
+          // Calculate header height for sticky offset (homepage only)
+          const isHomepage = document.body.classList.contains('homepage');
+          const headerOffset = isHomepage ? document.querySelector('header').offsetHeight + 40 : 20;
           window.scrollTo({
-            top: targetElement.offsetTop - 20,
+            top: targetElement.offsetTop - headerOffset,
             behavior: "smooth",
           });
         }
