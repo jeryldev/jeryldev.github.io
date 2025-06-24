@@ -30,6 +30,19 @@ header {
   padding: 20px 0;
 }
 
+/* Sticky header on homepage only */
+body.homepage header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add scroll padding to account for sticky header height on homepage */
+body.homepage {
+  scroll-padding-top: 120px;
+}
+
 header .container {
   display: flex;
   flex-direction: column;

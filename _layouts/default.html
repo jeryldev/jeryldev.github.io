@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
     <script src="{{ '/script.js' | relative_url }}" defer></script>
   </head>
-  <body>
+  <body{% if page.title == 'Home' %} class="homepage"{% endif %}>
     <header>
       <div class="container">
         <h1><a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
         <nav>
           <ul>
-            <li><a href="{{ '/#about' | relative_url }}">About Me</a></li>
-            <li><a href="{{ '/#hobbies' | relative_url }}">Hobbies & Interests</a></li>
+            <li><a href="{{ '/' | relative_url }}#about">About Me</a></li>
+            <li><a href="{{ '/' | relative_url }}#hobbies">Hobbies & Interests</a></li>
             <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-            <li><a href="{{ '/#contact' | relative_url }}">Contact Info</a></li>
+            <li><a href="{{ '/' | relative_url }}#contact">Contact Info</a></li>
           </ul>
         </nav>
       </div>
