@@ -8,8 +8,9 @@ vendor/
 # Claude Code instructions (project-specific)
 CLAUDE.md
 
-# Research and draft files
+# Research, notes, and draft files
 .research/
+docs/
 *.draft.md
 *-draft.md
 
