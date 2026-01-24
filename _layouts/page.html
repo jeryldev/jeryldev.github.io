@@ -1,0 +1,131 @@
+---
+layout: default
+---
+<article class="container page-content-single">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+  .page-content-single {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background: none;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .page-content {
+    line-height: 1.8;
+    color: #34495e;
+  }
+
+  .page-content h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-content h3 {
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-content pre {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+
+  .page-content code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+
+  .page-content pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .page-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .page-content table th,
+  .page-content table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  .page-content table th {
+    background: #f8f9fa;
+    font-weight: 600;
+  }
+
+  .page-content blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+
+  .page-content ul,
+  .page-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+
+  .page-content li {
+    margin: 0.5rem 0;
+  }
+
+  .page-content a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .page-content a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+  }
+
+  .page-content hr {
+    border: none;
+    border-top: 1px solid #ecf0f1;
+    margin: 2rem 0;
+  }
+</style>
