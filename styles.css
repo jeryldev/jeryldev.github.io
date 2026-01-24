@@ -520,3 +520,168 @@ footer a {
 footer a:hover {
   opacity: 0.8;
 }
+
+/* Active Navigation State */
+nav a.active {
+  opacity: 1;
+  color: var(--primary-light);
+  border-bottom-color: var(--primary-light);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: transparent;
+  border: 2px solid var(--text-light);
+  color: var(--text-light);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: var(--text-base);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dark-mode-toggle:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+.dark-mode-toggle .icon-moon {
+  display: none;
+}
+
+.dark-mode-toggle .icon-sun {
+  display: inline;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+  --primary: #fe8019;
+  --primary-hover: #d65d0e;
+  --primary-light: #fabd2f;
+  --secondary: #ebdbb2;
+  --light-bg: #282828;
+  --card-bg: #3c3836;
+  --dark-bg: #1d2021;
+  --text: #ebdbb2;
+  --text-secondary: #a89984;
+  --text-light: #fbf1c7;
+  --border: #504945;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --code-bg: #3c3836;
+}
+
+[data-theme="dark"] .dark-mode-toggle .icon-moon {
+  display: inline;
+}
+
+[data-theme="dark"] .dark-mode-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] header {
+  background: var(--dark-bg);
+}
+
+[data-theme="dark"] footer {
+  background: var(--dark-bg);
+}
+
+/* Enhanced Micro-interactions */
+
+/* Link hover effects */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Card title link hover */
+.card-title a {
+  transition: color 0.2s ease;
+}
+
+.card-title a:hover {
+  color: var(--primary) !important;
+}
+
+/* Badge hover effect */
+.badge {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+/* Button press effect */
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Focus states for accessibility (keyboard only) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Remove outline on mouse click */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Section fade-in on scroll (CSS only hint for JS) */
+.section,
+.section-sm {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Profile photo enhanced hover */
+.profile-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+/* Nav brand subtle animation */
+.nav-brand {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-brand:hover {
+  transform: translateX(2px);
+}
+
+/* Footer link hover */
+footer a {
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+  color: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+  }
+
+  .nav-container {
+    position: relative;
+  }
+}

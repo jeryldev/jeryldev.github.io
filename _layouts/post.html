@@ -1,13 +1,32 @@
 ---
 layout: default
 ---
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 %}
+{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+
 <article class="container blog-post-single">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">{{ page.title | truncatewords: 5 }}</span>
+  </nav>
+
   <div class="post-header">
     <h1>{{ page.title }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span class="meta-separator">·</span>
+      <span class="reading-time">{{ minutes }} min read</span>
       {% if page.tags %}
-        | Tags: {{ page.tags | join: ", " }}
+        <span class="meta-separator">·</span>
+        <span class="tags">
+          {% for tag in page.tags %}
+            <span class="badge badge-secondary">{{ tag }}</span>
+          {% endfor %}
+        </span>
       {% endif %}
     </div>
   </div>
@@ -27,7 +46,33 @@ layout: default
     margin: 0 auto;
     padding: var(--space-8) var(--space-4);
   }
-  
+
+  .breadcrumbs {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+  }
+
+  .breadcrumbs a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .breadcrumbs a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+  }
+
+  .breadcrumb-separator {
+    margin: 0 0.5rem;
+    color: var(--text-secondary);
+  }
+
+  .breadcrumb-current {
+    color: var(--text-secondary);
+  }
+
   .post-header {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -47,6 +92,27 @@ layout: default
   .post-meta {
     color: var(--text-secondary);
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    line-height: 1.8;
+  }
+
+  .post-meta .tags {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0;
+  }
+
+  .meta-separator {
+    margin: 0 0.25rem;
+  }
+
+  .reading-time {
+    font-weight: var(--font-medium);
   }
 
   .post-content {
