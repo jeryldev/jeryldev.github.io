@@ -345,10 +345,11 @@ hr {
 
 /* Tag container for proper spacing when wrapping */
 .tags {
-  display: flex;
-  gap: 0.5rem;
+  display: inline-flex;
+  gap: 0.25rem 0.5rem;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 0.5rem;
 }
 
 .badge + .badge {
