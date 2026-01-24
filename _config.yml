@@ -1,12 +1,18 @@
 # Jekyll configuration for GitHub Pages
-title: Jeryl Donato Estopace
-description: Software Engineer | Elixir/Phoenix Developer
+title: jeryldev
+description: Builder. Problem Solver. Perpetually Curious.
 url: "https://jeryldev.github.io"
 baseurl: ""
 
 # Build settings
 markdown: kramdown
 theme: null  # We're using custom CSS
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+plugins:
+  - jekyll-paginate
 
 # Collections
 collections:

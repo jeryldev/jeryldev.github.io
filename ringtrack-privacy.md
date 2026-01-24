@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: RingTrack Privacy Policy
 permalink: /ringtrack-privacy/
 ---
@@ -111,8 +111,7 @@ Under GDPR, CCPA, and other privacy laws, you have rights regarding your data. S
 
 If you have questions about this privacy policy:
 
-**Email:** [jeryldev@gmail.com](mailto:jeryldev@gmail.com)
-**GitHub:** [github.com/jeryldev/RingTrack](https://github.com/jeryldev/RingTrack)
+**Email:** [jeryldevsocial@gmail.com](mailto:jeryldevsocial@gmail.com)
 
 ## Legal
 

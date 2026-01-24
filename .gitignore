@@ -8,6 +8,16 @@ vendor/
 # Claude Code instructions (project-specific)
 CLAUDE.md
 
+# Research and draft files
+.research/
+*.draft.md
+*-draft.md
+
+# Preview and backup files
+*-backup.*
+*-preview*.*
+*-temp.*
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -16,3 +26,10 @@ CLAUDE.md
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

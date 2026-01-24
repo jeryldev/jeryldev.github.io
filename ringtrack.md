@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: RingTrack - Science-Backed Habit Tracker
 permalink: /ringtrack/
 ---
@@ -46,7 +46,7 @@ RingTrack helps you build lasting habits by focusing on **just 3 habits at a tim
 ## Download
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="https://apps.apple.com/app/ringtrack" style="display: inline-block; padding: 12px 24px; background: #007AFF; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  <a href="https://apps.apple.com/app/ringtrack" class="btn btn-primary">
     Download on the App Store
   </a>
 </div>
@@ -56,8 +56,7 @@ _Available soon on the App Store_
 ## Privacy & Support
 
 - [Privacy Policy](/ringtrack-privacy/)
-- [GitHub Repository](https://github.com/jeryldev/RingTrack)
-- Support: [jeryldev@gmail.com](mailto:jeryldev@gmail.com)
+- Support: [jeryldevsocial@gmail.com](mailto:jeryldevsocial@gmail.com)
 
 ---
 

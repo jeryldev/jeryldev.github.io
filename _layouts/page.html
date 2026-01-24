@@ -1,41 +1,31 @@
 ---
 layout: default
 ---
-<article class="container blog-post-single">
-  <div class="post-header">
+<article class="container page-content-single">
+  <div class="page-header">
     <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      {% if page.tags %}
-        | Tags: {{ page.tags | join: ", " }}
-      {% endif %}
-    </div>
   </div>
-  
-  <div class="post-content">
+
+  <div class="page-content">
     {{ content }}
-  </div>
-  
-  <div class="post-navigation">
-    <a href="{{ '/blog/' | relative_url }}" class="back-to-blog">← Back to Blog</a>
   </div>
 </article>
 
 <style>
-  .blog-post-single {
+  .page-content-single {
     max-width: 900px;
     margin: 0 auto;
     padding: var(--space-8) var(--space-4);
   }
-  
-  .post-header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
     background: none;
     text-align: center;
   }
-  
-  .post-header h1 {
+
+  .page-header h1 {
     color: var(--secondary);
     margin-bottom: 0.5rem;
     padding-top: 10px;
@@ -43,32 +33,27 @@ layout: default
     border-top: 2px solid var(--primary);
     border-bottom: 2px solid var(--primary);
   }
-  
-  .post-meta {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-  }
 
-  .post-content {
+  .page-content {
     line-height: 1.8;
     color: var(--text);
   }
 
-  .post-content h2 {
+  .page-content h2 {
     color: var(--secondary);
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
   }
 
-  .post-content h3 {
+  .page-content h3 {
     color: var(--secondary);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
   }
-  
-  .post-content pre {
+
+  .page-content pre {
     background: var(--code-bg);
     border: 1px solid var(--border);
     border-radius: 0;
@@ -78,7 +63,7 @@ layout: default
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
-  .post-content code {
+  .page-content code {
     background: var(--code-bg);
     padding: 0.25rem 0.5rem;
     border-radius: 0;
@@ -86,32 +71,32 @@ layout: default
     font-size: 0.9em;
     color: var(--text);
   }
-  
-  .post-content pre code {
+
+  .page-content pre code {
     background: none;
     padding: 0;
   }
-  
-  .post-content table {
+
+  .page-content table {
     border-collapse: collapse;
     width: 100%;
     margin: 1rem 0;
   }
-  
-  .post-content table th,
-  .post-content table td {
+
+  .page-content table th,
+  .page-content table td {
     border: 1px solid var(--border);
     padding: 0.75rem;
     text-align: left;
   }
 
-  .post-content table th {
+  .page-content table th {
     background: var(--code-bg);
     font-weight: 600;
     color: var(--secondary);
   }
 
-  .post-content blockquote {
+  .page-content blockquote {
     border-left: 4px solid var(--primary);
     padding-left: 1.5rem;
     margin: 1.5rem 0;
@@ -121,30 +106,23 @@ layout: default
     padding: 1rem 1.5rem;
     border-radius: 0;
   }
-  
-  .post-content ul, 
-  .post-content ol {
+
+  .page-content ul,
+  .page-content ol {
     margin: 1rem 0;
     padding-left: 2rem;
   }
-  
-  .post-content li {
+
+  .page-content li {
     margin: 0.5rem 0;
   }
 
-  .post-navigation {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid var(--border);
-  }
-  
-  .back-to-blog {
+  .page-content a {
     color: var(--primary);
     text-decoration: none;
-    font-weight: 500;
   }
-  
-  .back-to-blog:hover {
+
+  .page-content a:hover {
     color: var(--primary-hover);
     text-decoration: underline;
   }
