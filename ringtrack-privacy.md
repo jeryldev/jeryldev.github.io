@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: RingTrack Privacy Policy
 permalink: /ringtrack-privacy/
 ---

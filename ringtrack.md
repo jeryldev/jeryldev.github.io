@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: RingTrack - Science-Backed Habit Tracker
 permalink: /ringtrack/
 ---
