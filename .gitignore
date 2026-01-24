@@ -18,6 +18,7 @@ docs/
 *-backup.*
 *-preview*.*
 *-temp.*
+*-original.*
 
 # OS generated files
 .DS_Store

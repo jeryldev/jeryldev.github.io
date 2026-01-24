@@ -4,6 +4,12 @@ description: Builder. Problem Solver. Perpetually Curious.
 url: "https://jeryldev.github.io"
 baseurl: ""
 
+# Author info for meta tags
+author:
+  name: Jeryl Donato Estopace
+  twitter: jeryldev
+  image: /images/jeryl.jpg
+
 # Build settings
 markdown: kramdown
 theme: null  # We're using custom CSS
@@ -14,6 +20,8 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 plugins:
   - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Collections
 collections:
