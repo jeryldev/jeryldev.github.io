@@ -39,7 +39,7 @@
     - label: GitHub
       url: https://github.com/jeryldev/pyworks.nvim
     - label: Blog Post
-      url: /2026/01/25/pyworks-nvim-python-notebooks/
+      url: /blog/2026/01/25/pyworks-nvim-python-notebooks/
   featured: true
 
 - name: dev-session-manager
@@ -61,5 +61,5 @@
     - label: GitHub
       url: https://github.com/jeryldev/homebrew-tap
     - label: Blog Post
-      url: /2026/01/25/dev-session-manager-tmux-automation/
+      url: /blog/2026/01/25/dev-session-manager-tmux-automation/
   featured: true
