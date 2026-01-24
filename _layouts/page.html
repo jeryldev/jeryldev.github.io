@@ -2,9 +2,9 @@
 layout: default
 ---
 <article class="container page-content-single">
-  <header class="page-header">
+  <div class="page-header">
     <h1>{{ page.title }}</h1>
-  </header>
+  </div>
 
   <div class="page-content">
     {{ content }}
@@ -13,13 +13,9 @@ layout: default
 
 <style>
   .page-content-single {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: calc(100vh - 200px);
+    padding: var(--space-8) var(--space-4);
   }
 
   .page-header {
@@ -40,36 +36,40 @@ layout: default
 
   .page-content {
     line-height: 1.8;
-    color: #34495e;
+    color: var(--text);
   }
 
   .page-content h2 {
-    color: #2c3e50;
+    color: var(--secondary);
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-weight: 700;
   }
 
   .page-content h3 {
-    color: #34495e;
+    color: var(--secondary);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+    font-weight: 600;
   }
 
   .page-content pre {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 4px;
-    padding: 1rem;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    padding: 1.25rem;
     overflow-x: auto;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
   .page-content code {
-    background: #f8f9fa;
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
-    font-family: 'Courier New', monospace;
+    background: var(--code-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0;
+    font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Courier New', monospace;
     font-size: 0.9em;
+    color: var(--text);
   }
 
   .page-content pre code {
@@ -85,22 +85,26 @@ layout: default
 
   .page-content table th,
   .page-content table td {
-    border: 1px solid #ddd;
-    padding: 0.5rem;
+    border: 1px solid var(--border);
+    padding: 0.75rem;
     text-align: left;
   }
 
   .page-content table th {
-    background: #f8f9fa;
+    background: var(--code-bg);
     font-weight: 600;
+    color: var(--secondary);
   }
 
   .page-content blockquote {
-    border-left: 4px solid #3498db;
-    padding-left: 1rem;
-    margin: 1rem 0;
-    color: #7f8c8d;
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
     font-style: italic;
+    background: var(--code-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 0;
   }
 
   .page-content ul,
@@ -121,11 +125,5 @@ layout: default
   .page-content a:hover {
     color: var(--primary-hover);
     text-decoration: underline;
-  }
-
-  .page-content hr {
-    border: none;
-    border-top: 1px solid #ecf0f1;
-    margin: 2rem 0;
   }
 </style>

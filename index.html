@@ -2,125 +2,66 @@
 layout: default
 title: Home
 ---
-<section id="about" class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <div class="profile-image">
-            <img src="images/jeryl.jpg" alt="Jeryl Estopace" />
-          </div>
-          <div class="about-text">
-            <p>
-              Hi there! I'm Jeryl, a software engineer who loves building useful things with code.
-              My professional journey spans a diverse range of roles across different industries -
-              from private fund accounting and alternative investments, to technical support for
-              portfolio management systems and cloud-based accounting software, and now to software
-              engineering. I've helped build payment systems for a cryptocurrency exchange and
-              currently contribute to legal tech applications. This breadth of experience gives me a
-              unique perspective when approaching software problems.
-            </p>
 
-            <h3>My Journey</h3>
-            <p>
-              I started out in a completely different world - finance! After graduating with an
-              Accountancy degree in 2012, I was fortunate to work with financial systems that
-              sparked my curiosity about how technology actually works. This led me down a path
-              through technical support roles where I got to learn so much about software from the
-              inside out. Each role taught me something valuable that I now apply to software
-              engineering.
-            </p>
+{% include hero.html %}
 
-            <h3>Why Software Engineering?</h3>
-            <p>
-              What drew me to software engineering? It's the amazing blend of creativity and
-              problem-solving that gets me excited every day! There's something truly magical about
-              turning an idea into working code that helps solve real problems. I'm constantly
-              amazed by how much there is to learn in this field - every project brings new
-              challenges and opportunities to grow. The most rewarding part is seeing something I've
-              helped create actually making someone's day a little easier.
-            </p>
+{% include featured-projects.html %}
 
-            <p>
-              I'm grateful to be able to contribute to full-stack applications using tools like
-              Elixir/Phoenix and JavaScript, work on neat features using AI technologies, and build
-              solutions that help people in their daily work. It's a privilege to be part of
-              creating technology that makes a difference!
-            </p>
+{% include about-condensed.html %}
 
-            <p>
-              I'm also taking classes toward a Graduate Diploma in Computer Science, which is
-              helping me understand the "why" behind the "how" of programming - it's fascinating to
-              connect theory with practical application!
-            </p>
+<section id="recent-posts" class="section-sm" style="background-color: var(--card-bg);">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Recent Writing</h2>
+      <p class="section-subtitle">Technical deep-dives and project retrospectives</p>
+    </div>
 
-            <p>
-              I'd love to connect and learn from others in the field! Feel free to check out my
-              <a href="https://www.linkedin.com/in/jeryldev/" target="_blank">LinkedIn profile</a>
-              if you'd like to reach out.
-            </p>
-
-            <button id="fun-fact-btn">Click for a Fun Fact!</button>
-            <p id="fun-fact" class="hidden">
-              I completed the
-              <a href="https://www.freecodecamp.org/jeryldev" target="_blank"
-                >Legacy Full Stack Certification on freeCodeCamp</a
-              >
-              on May 17, 2020, and landed my first developer job in December 2020!
-            </p>
-          </div>
+    <div class="grid-2">
+      {% for post in site.posts limit:2 %}
+      <div class="card">
+        <h3 class="card-title">
+          <a href="{{ post.url | relative_url }}" style="color: var(--secondary); text-decoration: none;">
+            {{ post.title }}
+          </a>
+        </h3>
+        <div class="post-meta" style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-2);">
+          {{ post.date | date: "%B %d, %Y" }}
+          {% if post.tags %}
+            <span style="margin: 0 0.5rem;">·</span>
+            <span class="tags" style="display: inline-flex;">
+              {% for tag in post.tags limit:2 %}
+                <span class="badge badge-secondary" style="font-size: var(--text-xs);">{{ tag }}</span>
+              {% endfor %}
+            </span>
+          {% endif %}
         </div>
-      </section>
-      <section id="hobbies" class="container">
-        <h2>Hobbies & Interests</h2>
-        <div class="hobbies-content">
-          <div class="hobby-card">
-            <h3>Programming</h3>
-            <p>
-              I enjoy exploring distributed systems using Elixir and OTP. I've recently started
-              reading "Ash Framework: Create Declarative Elixir Web Apps" by Rebecca Le and Zach
-              Daniel. Last year, I finished "Designing Elixir Systems with OTP: Write Highly
-              Scalable, Self-Healing Software with Layers" which helped deepen my understanding of
-              building robust systems.
-            </p>
-          </div>
-          <div class="hobby-card">
-            <h3>Reading</h3>
-            <p>
-              I love diving into both technical books and novels. I'm constantly adding new
-              programming books to my collection to improve my skills. When it comes to fiction,
-              John Grisham's legal thrillers like "Rogue Lawyer" and "The Rainmaker" are among my
-              favorites.
-            </p>
-          </div>
-          <div class="hobby-card">
-            <h3>Chess & Basketball</h3>
-            <p>
-              Chess fascinates me with its depth and strategy. I enjoy rewatching classic games from
-              legends like Bobby Fischer and Mikhail Tal, while also following current tournament
-              matches of players like Grandmaster Wesley So, former World Champion Magnus Carlsen,
-              and International Master/Woman Grandmaster Lu Miaoyi. In basketball, I'm a Minnesota
-              Timberwolves fan, particularly admiring their 2004 lineup with Kevin Garnett, Latrell
-              Sprewell, and Sam Cassell.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="container">
-        <h2>Contact Info</h2>
-        <div class="contact-content">
-          <p>
-            I'd love to connect with fellow developers and tech enthusiasts! Feel free to
-            <a href="mailto:jeryldevsocial@gmail.com" class="contact-link">reach out</a>
-            if you'd like to collaborate or just chat about software engineering.
-          </p>
-          <p class="platform-intro">You can also find me on these platforms:</p>
-          <div class="social-links">
-            <a href="https://github.com/jeryldev" target="_blank" class="social-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" class="social-link"
-              >LinkedIn</a
-            >
-            <a href="https://www.freecodecamp.org/jeryldev" target="_blank" class="social-link"
-              >freeCodeCamp</a
-            >
-          </div>
-        </div>
-      </section>
+        <p class="card-body">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="btn btn-ghost btn-sm">Read More →</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div style="text-align: center; margin-top: var(--space-6);">
+      <a href="/blog/" class="btn btn-primary">View All Posts</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-sm" style="background-color: var(--dark-bg); color: var(--text-light);">
+  <div class="container">
+    <h2 class="section-title" style="color: var(--text-light); border-color: var(--primary-light);">Let's Talk</h2>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <p style="font-size: var(--text-lg); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
+        Have a problem worth solving? I'm curious about challenges across industries — not just tech.
+        <br>
+        Tell me what's broken.
+      </p>
+
+      <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="https://github.com/jeryldev" target="_blank" class="btn btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>

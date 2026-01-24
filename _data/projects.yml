@@ -1,0 +1,65 @@
+- name: RingTrack
+  tagline: Science-backed habit tracker for Apple Watch
+  description: Maximum 3 habits enforced based on cognitive load research. Visualizes progress as activity rings with 66-day automaticity milestones.
+  date: 2026-01-20
+  tech:
+    - Swift 6
+    - SwiftUI
+    - SwiftData
+    - watchOS 11
+  status: App Store submission pending
+  highlights:
+    - 3-habit focus based on Lally et al. research
+    - Cross-device sync via WatchConnectivity
+    - 7-day advance notification scheduling
+    - Seven mood-based themes
+  links:
+    - label: Product Page
+      url: /ringtrack/
+    - label: Privacy Policy
+      url: /ringtrack-privacy/
+  featured: true
+
+- name: pyworks.nvim
+  tagline: Zero-config Python notebooks in Neovim
+  description: Eliminates setup friction for Python development in terminal. Auto-creates venvs, detects missing packages, renders matplotlib plots inline.
+  date: 2026-01-15
+  tech:
+    - Lua
+    - Python
+    - Neovim API
+    - Jupyter
+  status: Open source
+  highlights:
+    - Auto venv creation and package detection
+    - Inline matplotlib plots via Kitty protocol
+    - 10-100x faster installs with uv
+    - Jupytext integration for .ipynb files
+  links:
+    - label: GitHub
+      url: https://github.com/jeryldev/pyworks.nvim
+    - label: Blog Post
+      url: /2026/01/25/pyworks-nvim-python-notebooks/
+  featured: true
+
+- name: dev-session-manager
+  tagline: Automate tmux session creation
+  description: Eliminates repetitive terminal setup with pre-configured tmux sessions from YAML configs. One command creates your entire development environment.
+  date: 2026-01-25
+  tech:
+    - Bash
+    - tmux
+    - YAML
+    - Homebrew
+  status: Open source
+  highlights:
+    - Published as Homebrew tap
+    - Declarative YAML configurations
+    - Idempotent session management
+    - Zero-friction context switching
+  links:
+    - label: GitHub
+      url: https://github.com/jeryldev/homebrew-tap
+    - label: Blog Post
+      url: /2026/01/25/dev-session-manager-tmux-automation/
+  featured: true
