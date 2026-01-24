@@ -11,7 +11,7 @@ title: Blog
     </div>
 
     <div class="grid-2">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
       <article class="card">
         <h3 class="card-title">
           <a href="{{ post.url | relative_url }}" style="color: var(--secondary); text-decoration: none;">
@@ -36,28 +36,6 @@ title: Blog
       </article>
       {% endfor %}
     </div>
-
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination" style="margin-top: var(--space-8); text-align: center;">
-      <div style="display: flex; gap: var(--space-2); justify-content: center; align-items: center;">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | relative_url }}" class="btn btn-secondary">← Previous</a>
-        {% else %}
-          <span class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;">← Previous</span>
-        {% endif %}
-
-        <span style="font-size: var(--text-base); color: var(--text-secondary);">
-          Page {{ paginator.page }} of {{ paginator.total_pages }}
-        </span>
-
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | relative_url }}" class="btn btn-secondary">Next →</a>
-        {% else %}
-          <span class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;">Next →</span>
-        {% endif %}
-      </div>
-    </div>
-    {% endif %}
   </div>
 </section>
 
