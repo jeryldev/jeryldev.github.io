@@ -98,10 +98,158 @@ RingTrack is completely free with no subscription. If you find it valuable, you 
 
 _Available soon on the App Store_
 
-## Privacy & Support
+## Support {#support}
 
-- [Privacy Policy](/ringtrack-privacy/)
-- Support: [jeryldevsocial@gmail.com](mailto:jeryldevsocial@gmail.com)
+<div class="support-section">
+  <p>Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.</p>
+
+  <form id="support-form" class="support-form">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="What should I call you?">
+    </div>
+
+    <div class="form-group">
+      <label for="issue-type">What can I help with?</label>
+      <select id="issue-type" name="issue-type" required>
+        <option value="">Select an option...</option>
+        <option value="Bug Report">Bug Report</option>
+        <option value="Feature Request">Feature Request</option>
+        <option value="Question">Question</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Tell me more</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Describe the issue, question, or idea..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="device">Device & OS Version (optional)</label>
+      <input type="text" id="device" name="device" placeholder="e.g., iPhone 15, iOS 18.2 / Apple Watch Series 9, watchOS 11.2">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send via Email</button>
+    <p class="form-note">This will open your email client with the message pre-filled.</p>
+  </form>
+
+  <div class="support-alt">
+    <p>Prefer to write directly? <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
+    <p><a href="/ringtrack-privacy/">Privacy Policy</a></p>
+  </div>
+</div>
+
+<script>
+document.getElementById('support-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const issueType = document.getElementById('issue-type').value;
+  const message = document.getElementById('message').value;
+  const device = document.getElementById('device').value;
+
+  const subject = encodeURIComponent('RingTrack ' + issueType);
+  const body = encodeURIComponent(
+    'Hi Jeryl,\n\n' +
+    'My name is ' + name + '.\n\n' +
+    'Issue Type: ' + issueType + '\n\n' +
+    'Details:\n' + message + '\n\n' +
+    (device ? 'Device Info: ' + device + '\n\n' : '') +
+    'Thanks!'
+  );
+
+  window.location.href = 'mailto:jeryldevsocial@gmail.com?subject=' + subject + '&body=' + body;
+});
+</script>
+
+<style>
+  .support-section {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .support-section > p {
+    text-align: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .support-form {
+    background: var(--card-bg);
+    padding: var(--space-4);
+    border-left: 4px solid var(--primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .support-form .form-group {
+    margin-bottom: var(--space-3);
+  }
+
+  .support-form .form-group label {
+    display: block;
+    font-weight: var(--font-semibold);
+    color: var(--secondary);
+    margin-bottom: var(--space-1);
+  }
+
+  .support-form .form-group input,
+  .support-form .form-group textarea,
+  .support-form .form-group select {
+    width: 100%;
+    padding: var(--space-2);
+    font-size: var(--text-base);
+    font-family: inherit;
+    border: 2px solid var(--border);
+    background: var(--light-bg);
+    color: var(--text);
+    transition: border-color 0.3s ease;
+  }
+
+  .support-form .form-group input:focus,
+  .support-form .form-group textarea:focus,
+  .support-form .form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+
+  .support-form .form-group input::placeholder,
+  .support-form .form-group textarea::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+
+  .support-form .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .support-form .btn {
+    width: 100%;
+    padding: var(--space-2);
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-top: var(--space-2);
+    margin-bottom: 0;
+  }
+
+  .support-alt {
+    text-align: center;
+    color: var(--text-secondary);
+  }
+
+  .support-alt a {
+    color: var(--primary);
+    font-weight: var(--font-medium);
+  }
+
+  .support-alt p {
+    margin-bottom: var(--space-2);
+  }
+</style>
 
 ---
 

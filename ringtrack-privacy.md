@@ -111,7 +111,7 @@ Under GDPR, CCPA, and other privacy laws, you have rights regarding your data. S
 
 If you have questions about this privacy policy:
 
-**Email:** [jeryldevsocial@gmail.com](mailto:jeryldevsocial@gmail.com)
+**[Contact Support](/ringtrack/#support)**
 
 ## Legal
 
