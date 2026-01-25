@@ -685,3 +685,49 @@ footer a:hover {
     position: relative;
   }
 }
+
+/* RingTrack App Page Styles */
+
+/* Habit Types Grid */
+.habit-types-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+@media (min-width: 768px) {
+  .habit-types-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.habit-type-card {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--primary);
+  padding: var(--space-4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habit-type-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.habit-type-card h3 {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-lg);
+}
+
+.habit-type-card p {
+  margin-bottom: 0;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.habit-type-icon {
+  font-size: var(--text-4xl);
+  line-height: 1;
+}

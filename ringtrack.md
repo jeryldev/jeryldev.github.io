@@ -6,42 +6,87 @@ permalink: /ringtrack/
 
 # RingTrack
 
-**A science-backed habit tracker for iPhone and Apple Watch**
+**Build lasting habits with a habit tracker designed around behavioral science research.**
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/images/ringtrack-icon.png" alt="RingTrack App Icon" style="width: 150px; height: 150px; border-radius: 25px;" />
 </div>
 
-## Why RingTrack?
+## Why Only 3 Habits?
 
-RingTrack helps you build lasting habits by focusing on **just 3 habits at a time**. Based on cognitive load research, limiting your focus dramatically improves success rates.
+Research shows that focusing on fewer habits increases success rates. RingTrack limits you to 3 concurrent habits based on cognitive load research. **Focus beats breadth.**
 
-### Key Features
+## Features
 
-- **Maximum 3 Habits** - Focus beats breadth
-- **Beautiful Rings** - Visualize daily progress at a glance
-- **Watch-First Design** - Log habits in 2 seconds from your wrist
-- **Science-Backed** - 66-day automaticity milestone (Lally et al. research)
-- **Three Habit Types**:
-  - ⏱️ Timer (meditation, reading, exercise)
-  - 🔢 Counter (water glasses, push-ups)
-  - ✅ Checkbox (vitamins, morning routine)
-- **7 Mood-Based Themes** - Midnight, Ocean, Forest, Dusk, Ember, Slate, Dawn
-- **Privacy-First** - All data stored locally, no tracking
-- **Free Forever** - Optional tip jar to support development
+- **Maximum 3 habits** - Quality over quantity
+- **Beautiful rings** - Visualize daily progress
+- **Watch-first design** - Lowest friction logging
+- **Timer, counter, and checkbox** - Three habit types
+- **66-day automaticity milestone** - Based on habit formation research
+- **Milestone celebrations** - At 7, 21, 30, 66, and 100 days
+- **Customizable colors** - Personalize your experience
+- **Local data** - Complete privacy
+- **No subscription** - Free forever
 
-## Built on Research
+## Science-Backed Approach
 
-- **66-day milestone** based on Lally et al.'s automaticity research
+RingTrack is built on behavioral science principles:
+
+- **66-day milestone** based on [habit formation research](https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.674)
 - **Immediate visual feedback** (rings fill as you progress)
-- **Friction reduction** (Apple Watch complications)
-- **Identity-based habit formation**
-- **Never miss twice recovery system**
+- **Friction reduction** (log habits in 2 seconds from your wrist)
+- **Identity-based habits** (focus on who you want to become)
+- **Never miss twice** recovery system
+
+## Habit Types
+
+<div class="habit-types-grid">
+  <div class="habit-type-card">
+    <div class="habit-type-icon">⏱️</div>
+    <h3>Timer Habits</h3>
+    <p>Track time-based activities like meditation, reading, or exercise. Set a goal and watch your ring fill as the timer runs.</p>
+  </div>
+  <div class="habit-type-card">
+    <div class="habit-type-icon">🔢</div>
+    <h3>Counter Habits</h3>
+    <p>Track countable actions like glasses of water, push-ups, or pages read. Tap to increment throughout the day.</p>
+  </div>
+  <div class="habit-type-card">
+    <div class="habit-type-icon">✅</div>
+    <h3>Checkbox Habits</h3>
+    <p>Simple yes/no habits like taking vitamins or making your bed. One tap to complete.</p>
+  </div>
+</div>
+
+## Watch-First Design
+
+Your Apple Watch is the primary interface:
+
+- **Glance** at all 3 rings on your wrist
+- **Log** actions in 2 seconds
+- **Complications** for quick access
+- **Haptic feedback** on completion
+- **Works standalone** (no iPhone required)
+
+## Privacy First
+
+Your habits stay on your devices:
+
+- No account creation
+- No data collection
+- No analytics or tracking
+- All data stored locally
+
+## Tip Jar
+
+RingTrack is completely free with no subscription. If you find it valuable, you can leave a tip to support development. Tips are 100% optional.
 
 ## Requirements
 
 - iPhone running iOS 18.0 or later
-- Apple Watch running watchOS 11.0 or later
+- Apple Watch running watchOS 11.0 or later (optional)
+
+**Start building better habits today.**
 
 ## Download
 
