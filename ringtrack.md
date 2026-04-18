@@ -2,6 +2,8 @@
 layout: page
 title: RingTrack - Science-Backed Habit Tracker
 permalink: /ringtrack/
+published: false
+sitemap: false
 ---
 
 # RingTrack

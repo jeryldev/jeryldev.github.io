@@ -2,6 +2,8 @@
 layout: page
 title: RingTrack Privacy Policy
 permalink: /ringtrack-privacy/
+published: false
+sitemap: false
 ---
 
 # Privacy Policy for RingTrack
