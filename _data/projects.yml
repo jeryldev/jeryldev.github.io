@@ -1,23 +1,28 @@
-- name: RingTrack
-  tagline: Science-backed habit tracker for Apple Watch
-  description: Maximum 3 habits enforced based on cognitive load research. Visualizes progress as activity rings with 66-day automaticity milestones.
-  date: 2026-01-20
+- name: Namna
+  tagline: Philippine financial independence planner for iPhone
+  description: Offline-first planner that estimates when your savings and investments may support the life you want. Built around Philippine vehicles like MP2, PERA, RTBs, SSS, and GSIS. No accounts, no cloud sync, no tracking.
+  date: 2026-04-18
   tech:
-    - Swift 6
-    - SwiftUI
-    - SwiftData
-    - watchOS 11
+    - React Native
+    - Expo
+    - TypeScript
+    - SQLite
   status: App Store submission pending
   highlights:
-    - 3-habit focus based on Lally et al. research
-    - Cross-device sync via WatchConnectivity
-    - 7-day advance notification scheduling
-    - Seven mood-based themes
+    - Take-home-pay-first inputs (not gross salary)
+    - Presets for MP2, PERA, PSE, RTBs, SSS, GSIS, and more
+    - Future scenarios to model life changes without changing the current plan
+    - English and Filipino throughout
+    - All data stays on the device — SQLite, no backend
   links:
     - label: Product Page
-      url: /ringtrack/
+      url: /namna/
     - label: Privacy Policy
-      url: /ringtrack-privacy/
+      url: /namna-privacy/
+    - label: Support
+      url: /namna-support/
+    - label: Blog Post
+      url: /blog/2026/04/18/namna-financial-independence-for-filipinos/
   featured: true
 
 - name: pyworks.nvim
