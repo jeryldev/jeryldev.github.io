@@ -1,21 +1,22 @@
-/* Science-Backed Gruvbox Palette - Warm Retro Colors */
-/* Research: Warm tones increase content retention 15% (Kodachrome study) */
-/* Used by: Vim community, retro terminals - optimal for creative portfolios */
+/* Clay & Bone Palette - Filipino Craft, Editorial Warmth */
+/* Ground: Bone cream reads as handmade paper */
+/* Accent: Clay terracotta — Filipino earth tones, thoughtful craftsmanship */
+/* Headings: Fraunces (humanist serif). Body: IBM Plex Sans. Code: IBM Plex Mono. */
 :root {
   /* Colors */
-  --primary: #d65d0e; /* Gruvbox orange (warm, inviting) */
-  --primary-hover: #af3a03; /* Deeper orange on hover */
-  --primary-light: #fe8019; /* Bright orange accent */
-  --secondary: #3c3836; /* Dark warm grey for headings */
-  --light-bg: #fbf1c7; /* Warm cream - reduces blue light */
-  --card-bg: #f9f5d7; /* Light cream cards */
-  --dark-bg: #3c3836; /* Dark warm grey */
-  --text: #3c3836; /* Dark warm grey - softer than black */
-  --text-secondary: #7c6f64; /* Medium grey-brown */
-  --text-light: #fbf1c7; /* Warm cream for dark backgrounds */
-  --border: #ebdbb2; /* Light brown border */
-  --shadow: rgba(60, 56, 54, 0.08); /* Warm shadow */
-  --code-bg: #ebdbb2; /* Warm beige - stronger contrast for readability */
+  --primary: #B35933; /* Clay — primary accent */
+  --primary-hover: #8B4225; /* Burnt clay — hover state */
+  --primary-light: #D07D4A; /* Light clay — soft accent */
+  --secondary: #1F1815; /* Ink — headings (never pure black) */
+  --light-bg: #F5EEE0; /* Bone — page background, handmade-paper feel */
+  --card-bg: #EFE6D4; /* Card — slightly deeper bone */
+  --dark-bg: #1F1815; /* Ink — header/footer on light theme */
+  --text: #1F1815; /* Ink — body text */
+  --text-secondary: #6B5A4D; /* Coffee muted — captions and metadata */
+  --text-light: #F5EEE0; /* Bone — text on dark surfaces */
+  --border: #D4C4A8; /* Warm stone — 1px dividers */
+  --shadow: rgba(31, 24, 21, 0.08); /* Warm ink shadow, kept subtle */
+  --code-bg: #E8DCC4; /* Warm stone tint — inline code */
 
   /* Type Scale (1.250 - Major Third) */
   --text-xs: 0.8rem;      /* 12.8px */
@@ -70,12 +71,24 @@
 body {
   color: var(--text);
   background-color: var(--light-bg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: var(--leading-relaxed);
   font-size: var(--text-base);
   font-weight: var(--font-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.card-title {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 36, "SOFT" 50;
+}
+
+code, pre, kbd, samp, tt {
+  font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Courier New", monospace;
 }
 
 /* Typography */
@@ -555,21 +568,21 @@ nav a.active {
   display: inline;
 }
 
-/* Dark Mode Styles */
+/* Dark Mode Styles — Ink & Clay */
 [data-theme="dark"] {
-  --primary: #fe8019;
-  --primary-hover: #d65d0e;
-  --primary-light: #fabd2f;
-  --secondary: #ebdbb2;
-  --light-bg: #282828;
-  --card-bg: #3c3836;
-  --dark-bg: #1d2021;
-  --text: #ebdbb2;
-  --text-secondary: #a89984;
-  --text-light: #fbf1c7;
-  --border: #504945;
+  --primary: #D07D4A;           /* Clay brightened for dark contrast */
+  --primary-hover: #E69565;     /* Warmer clay on hover */
+  --primary-light: #EEAA7B;     /* Cream-clay highlight */
+  --secondary: #F5EEE0;         /* Bone — headings on dark */
+  --light-bg: #1F1815;          /* Deep ink background */
+  --card-bg: #2A201C;           /* Slightly lifted ink for cards */
+  --dark-bg: #161210;           /* Deepest ink for headers */
+  --text: #F5EEE0;              /* Bone body text */
+  --text-secondary: #A69580;    /* Warm stone for meta */
+  --text-light: #F5EEE0;
+  --border: #3A2F28;            /* Coffee-dark 1px dividers */
   --shadow: rgba(0, 0, 0, 0.3);
-  --code-bg: #3c3836;
+  --code-bg: #2A201C;
 }
 
 [data-theme="dark"] .dark-mode-toggle .icon-moon {
