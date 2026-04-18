@@ -94,23 +94,23 @@ code, pre, kbd, samp, tt {
 /* Typography */
 h1 {
   font-size: var(--text-4xl);
-  line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  line-height: 1.1;
+  font-weight: var(--font-semibold);
   color: var(--secondary);
   margin-bottom: var(--space-4);
 }
 
 h2 {
   font-size: var(--text-3xl);
-  line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  line-height: 1.15;
+  font-weight: var(--font-semibold);
   color: var(--secondary);
   margin-bottom: var(--space-3);
 }
 
 h3 {
   font-size: var(--text-2xl);
-  line-height: var(--leading-normal);
+  line-height: 1.2;
   font-weight: var(--font-semibold);
   color: var(--secondary);
   margin-bottom: var(--space-2);
@@ -118,10 +118,32 @@ h3 {
 
 h4 {
   font-size: var(--text-xl);
-  line-height: var(--leading-normal);
-  font-weight: var(--font-semibold);
+  line-height: 1.25;
+  font-weight: var(--font-medium);
   color: var(--secondary);
   margin-bottom: var(--space-2);
+}
+
+/* Imagery — editorial, warm, minimal */
+figure {
+  margin: var(--space-4) 0;
+}
+
+figure img,
+.project-image,
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+figcaption {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: var(--space-1);
+  font-style: italic;
 }
 
 p {
@@ -261,26 +283,20 @@ hr {
 .btn-primary {
   background-color: var(--primary);
   color: var(--text-light);
-  box-shadow: 0 2px 8px rgba(214, 93, 14, 0.2);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(214, 93, 14, 0.3);
   text-decoration: none;
 }
 
 .btn-secondary {
   background-color: var(--dark-bg);
   color: var(--text-light);
-  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .btn-secondary:hover {
   background-color: var(--secondary);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow);
   text-decoration: none;
 }
 
@@ -306,13 +322,10 @@ hr {
   background-color: var(--card-bg);
   border-left: 4px solid var(--primary);
   padding: var(--space-4);
-  box-shadow: 0 2px 8px var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+  transition: border-left-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px var(--shadow);
   border-left-color: var(--primary-light);
 }
 
@@ -335,17 +348,18 @@ hr {
   flex-wrap: wrap;
 }
 
-/* Badges */
+/* Badges — editorial small-caps feel */
 .badge {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
-  font-size: var(--text-xs);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
   font-weight: var(--font-medium);
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--text-light);
   background-color: var(--dark-bg);
   border-radius: 0;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .badge-primary {
@@ -398,8 +412,7 @@ header {
   background: var(--dark-bg);
   color: var(--text-light);
   padding: var(--space-2) 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -505,8 +518,7 @@ footer {
   text-align: center;
   padding: 32px 0;
   margin-top: 64px;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 2px solid var(--primary);
+  border-top: 1px solid var(--primary);
 }
 
 footer .container {
