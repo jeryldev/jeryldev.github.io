@@ -460,7 +460,7 @@ hr {
 }
 
 /* Header & Navigation — paper-tone with subtle divider */
-header {
+body > header {
   background-color: var(--light-bg);
   color: var(--text);
   padding: var(--space-2) 0;
