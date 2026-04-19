@@ -25,6 +25,30 @@
       url: /blog/2026/04/18/namna-financial-independence-for-filipinos/
   featured: true
 
+- name: sajj
+  tagline: AI workflow analyzer with research-backed criteria and exportable build specs
+  description: Describe any business process — sajj decomposes it into steps, scores each against four boolean criteria (structured, deterministic, low-risk, no authority), and generates a full build spec you can paste into Claude Code or Cursor. Free, no signup, feeds graduate research on AI-human workflow boundaries at AIM.
+  date: 2026-03-29
+  tech:
+    - React 19
+    - Vite
+    - Vercel Serverless
+    - Supabase
+    - Gemini 2.0 Flash
+  status: Live
+  highlights:
+    - Four-criteria assessment model (green / yellow / red tiers derive directly from the booleans)
+    - Build Spec exporter generates a full context-engineering prompt for Claude Code or Cursor
+    - 208 workflow suggestions across 24 industries, 10-language UI
+    - 72 Playwright end-to-end tests covering landing, analysis, feedback, corrections
+    - Correction feedback loop feeds a Supabase research dataset on LLM decomposition accuracy
+  links:
+    - label: Launch site
+      url: https://sajj.dev
+    - label: Blog Post
+      url: /blog/2026/03/29/sajj-ai-workflow-analyzer/
+  featured: true
+
 - name: citruszest-ghostty.nvim
   tagline: Dark Neovim colorscheme inspired by Citruszest and Ghostty terminal colors
   description: Vibrant citrus accents on a true-dark ground. Treesitter and LSP semantic highlights, plugin support for Telescope, Snacks, Lazy, Which-key, Noice, GitSigns, Mini, and IndentBlankline. Terminal colors exported so your shell, editor, and terminal all agree.
