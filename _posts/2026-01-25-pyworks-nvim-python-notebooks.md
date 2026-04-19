@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Building pyworks.nvim: Zero-Configuration Python Notebooks in Neovim"
+title: "pyworks.nvim: Zero-Config Python Notebooks in Neovim"
 date: 2026-01-25
 tags: [Neovim, Python, Lua, Developer Tools, Open Source]
+description: "A Neovim plugin that runs Jupyter-style Python notebooks in the terminal with zero setup — auto venvs, missing-package detection, inline matplotlib plots, and Jupytext for .ipynb files."
+image: /images/jeryl.jpg
 excerpt: "I built a Neovim plugin that brings Jupyter-like notebook workflows to the terminal with zero configuration. Here's why I created it and how it works under the hood."
 ---
 

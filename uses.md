@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Uses
+title: Uses — Tools and Stack
 permalink: /uses/
+description: "The tools and technologies behind the software I ship: Neovim with citruszest-ghostty, Ghostty terminal, tmux with dev-session-manager, Elixir, Phoenix, Ash, React Native, and more."
 ---
 
 <section class="uses-section">

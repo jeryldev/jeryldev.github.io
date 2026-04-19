@@ -3,6 +3,8 @@ layout: post
 title: "Automating tmux Setup with dev-session-manager"
 date: 2026-01-25
 tags: [tmux, Bash, Developer Tools, Homebrew, Productivity]
+description: "A Bash utility that creates pre-configured tmux sessions from YAML. Published as a Homebrew tap to eliminate the 2-3 min of terminal setup friction on every project switch."
+image: /images/jeryl.jpg
 excerpt: "I got tired of manually creating the same tmux windows every time I switched projects, so I built a tool to automate it and published it as a Homebrew tap."
 ---
 

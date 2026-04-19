@@ -2,6 +2,7 @@
 layout: page
 title: Namna Support
 permalink: /namna-support/
+description: "Get help with Namna — common questions about data storage, backups, inflation handling, bank connections, refunds, and the tech stack. Direct email support included."
 ---
 
 # Namna Support

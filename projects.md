@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Projects
+title: Projects — Things I've Built
 permalink: /projects/
+description: "Indie iOS apps, Neovim plugins, AI tools, and developer tools — Namna, sajj, obsidian-cli.nvim, citruszest-ghostty.nvim, pyworks.nvim, and dev-session-manager."
 ---
 
 <section class="projects-section">

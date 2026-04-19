@@ -8,6 +8,7 @@ description: >-
 url: "https://jeryldev.github.io"
 baseurl: ""
 lang: en_PH
+locale: en_PH
 timezone: Asia/Manila
 
 # Author info for meta tags + jekyll-seo-tag

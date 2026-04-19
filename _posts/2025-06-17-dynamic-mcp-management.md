@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Automated Server-Dependent MCP Management for Phoenix LiveView Projects"
+title: "Automating MCP Server Management for Phoenix LiveView"
 date: 2025-06-17
 tags: [Elixir, Phoenix, AI, DevTools, Automation, MCP, Claude, Tidewave]
+description: "A Bash script that automates Claude Code MCP connections for Phoenix LiveView projects — detects the current project's Tidewave endpoint and updates .mcp.json on directory change."
+image: /images/jeryl.jpg
 excerpt: "Most Claude Code CLI MCPs work great once configured, but server-dependent MCPs like Tidewave need to connect to specific project endpoints. Here's how I automated the connection management for seamless project switching."
 ---
 

@@ -3,6 +3,8 @@ layout: post
 title: "citruszest-ghostty.nvim: One Palette for Neovim and Ghostty"
 date: 2026-03-26 12:00:00 +0800
 tags: [Neovim, Lua, Ghostty, Colorscheme, Developer Tools, Open Source]
+description: "A Neovim colorscheme that shares 16 terminal colors exactly with Ghostty. Full Treesitter + LSP semantic token coverage, plus plugin support for Telescope, Snacks, Lazy, Which-key, Noice, and Mini."
+image: /images/jeryl.jpg
 excerpt: "I wanted my terminal and my editor to use the exact same 16 colors — not just close enough, the same hex values. So I shipped a Neovim colorscheme that shares a palette with Ghostty."
 ---
 

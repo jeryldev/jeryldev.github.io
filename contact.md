@@ -2,6 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact/
+description: "Tell me what's broken. Direct problem diagnosis across accounting, finance, legal tech, and software — any industry welcome. No pitch, no positioning."
 ---
 
 <section class="section contact-page-section">

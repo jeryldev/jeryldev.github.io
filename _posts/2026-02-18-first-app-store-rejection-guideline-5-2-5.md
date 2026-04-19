@@ -3,6 +3,8 @@ layout: post
 title: "My First App Store Rejection, and Why I'm Okay With It"
 date: 2026-02-18 12:00:00 +0800
 tags: [iOS, App Store, watchOS, Indie, Lessons, RingTrack]
+description: "My habit-tracker app got rejected under Apple's Guideline 5.2.5 (trademark similarity). The honest breakdown of what the name and visual metaphor collided with, and the 30-minute checklist that would have caught it before shipping."
+image: /images/jeryl.jpg
 excerpt: "I spent four weekends building my first Apple Watch app with an accompanying iPhone companion. Designed it, coded it, submitted it, and got rejected under Guideline 5.2.5 — a trademark issue. Here's what I learned, and why I'm genuinely fine with it."
 ---
 

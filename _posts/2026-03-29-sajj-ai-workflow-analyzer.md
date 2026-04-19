@@ -3,6 +3,8 @@ layout: post
 title: "sajj: Can a Couple of AI Agents Handle Your Workflow?"
 date: 2026-03-29 10:00:00 +0800
 tags: [AI, Gemini, React, Vercel, Supabase, Research, MIB]
+description: "sajj decomposes any business process into steps, scores each against four criteria (structured, deterministic, low-risk, no authority), and exports a build spec for Claude Code or Cursor. Free, 2 min, no signup."
+image: /images/jeryl.jpg
 excerpt: "I've been getting the 'can AI handle my workflow?' question enough times to want a serious answer. So I built a free tool that decomposes any business process, scores each step against four criteria, and generates a build spec you can paste into Claude Code or Cursor. It also feeds my graduate research at AIM."
 ---
 

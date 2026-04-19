@@ -3,6 +3,8 @@ layout: post
 title: "Wrap, Don't Reimplement: Building obsidian-cli.nvim"
 date: 2026-04-12 14:00:00 +0800
 tags: [Neovim, Lua, Obsidian, Developer Tools, Open Source]
+description: "Why I built a 2,000-line Neovim plugin that wraps Obsidian's official CLI instead of reimplementing the vault format in Lua. Trade-offs, architecture, and real Obsidian search/backlinks/templates over IPC."
+image: /images/jeryl.jpg
 excerpt: "I built a Neovim plugin for Obsidian as a thin wrapper over Obsidian's official CLI — not a Lua reimplementation of the vault format. Here's why 2,000 lines beat 4,500 lines once the official CLI shipped."
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title: Namna Privacy Policy
 permalink: /namna-privacy/
+description: "Namna collects zero personal data. Your plan stays on your iPhone via on-device SQLite. No cloud sync, no analytics, no ads, no third-party SDKs."
 ---
 
 # Privacy Policy for Namna

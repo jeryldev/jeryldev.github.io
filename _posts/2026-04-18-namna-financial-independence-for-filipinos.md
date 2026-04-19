@@ -3,6 +3,8 @@ layout: post
 title: "Building Namna: A Financial Independence Planner for Filipinos"
 date: 2026-04-18
 tags: [React Native, Expo, TypeScript, Personal Finance, Philippines, Mobile]
+description: "Namna is an offline-first Philippine FI planner for iPhone. Built around take-home pay and local vehicles — MP2, PERA, RTBs, SSS, GSIS. Why I moved from FIRE to financial independence, and how amounts ship in today's pesos."
+image: /images/jeryl.jpg
 excerpt: "I built an offline iPhone app that estimates when your money could be enough — starting from Filipino take-home pay and local vehicles like MP2, PERA, SSS, and GSIS. Here's why, and what I learned along the way."
 ---
 
