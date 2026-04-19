@@ -20,8 +20,10 @@ title: Home
       {% for post in site.posts limit:3 %}
       <li class="recent-post-item">
         <time class="recent-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        <a class="recent-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <p class="recent-post-dek">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+        <div class="recent-post-body">
+          <a class="recent-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <p class="recent-post-dek">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+        </div>
       </li>
       {% endfor %}
     </ul>
@@ -53,27 +55,25 @@ title: Home
     border-bottom: 1px solid var(--border);
   }
 
+  .recent-posts-section .section-header {
+    margin: 0 auto var(--space-5);
+    max-width: 56rem;
+  }
+
   .recent-posts-list {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
     border-top: 1px solid var(--border);
+    max-width: 56rem;
   }
 
   .recent-post-item {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.35rem;
+    gap: 0.5rem;
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--border);
-    transition: padding 0.2s ease;
-  }
-
-  .recent-post-item:hover {
-    padding-left: 0.75rem;
   }
 
   .recent-post-date {
@@ -83,6 +83,12 @@ title: Home
     color: var(--text-tertiary);
     text-transform: uppercase;
     letter-spacing: 0.12em;
+  }
+
+  .recent-post-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .recent-post-title {
@@ -105,19 +111,21 @@ title: Home
     font-size: 0.9375rem;
     line-height: 1.55;
     color: var(--text-secondary);
-    max-width: 56ch;
+    max-width: 60ch;
     margin: 0;
   }
 
   .recent-posts-cta {
-    margin-top: var(--space-5);
+    margin: var(--space-5) auto 0;
+    max-width: 56rem;
   }
 
   @media (min-width: 768px) {
     .recent-post-item {
-      grid-template-columns: 8rem 1fr;
+      grid-template-columns: 9rem 1fr;
       column-gap: var(--space-5);
       align-items: baseline;
+      gap: 0;
     }
     .recent-post-date {
       padding-top: 0.5rem;
