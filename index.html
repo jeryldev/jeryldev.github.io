@@ -39,11 +39,12 @@ image: /images/jeryl.jpg
 <section id="contact" class="section-sm contact-section">
   <div class="container">
     <div class="contact-inner">
-      <span class="section-eyebrow">Get in touch</span>
-      <h2 class="contact-title">Have a problem worth solving?</h2>
-      <p class="contact-dek">I'm curious about challenges across industries — not just tech. Tell me what's broken and I'll tell you honestly whether I can help.</p>
+      <span class="section-eyebrow">Consulting</span>
+      <h2 class="contact-title">Building something that matters?</h2>
+      <p class="contact-dek">I take on a small number of consulting and solution-building engagements each quarter. Whether you're shipping a product, rebuilding a system, or exploring an idea that needs an experienced hand — tell me what you're working on.</p>
+      <p class="contact-typical"><span class="mono-label">Typical work</span> Elixir / Phoenix backends · React Native apps · AI workflows · Developer tools</p>
       <div class="contact-actions">
-        <a href="/contact/" class="btn btn-primary">Send a note →</a>
+        <a href="/contact/" class="btn btn-primary">Start a conversation →</a>
         <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
         <a href="https://github.com/jeryldev" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
       </div>
@@ -159,8 +160,26 @@ image: /images/jeryl.jpg
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
+    margin-bottom: var(--space-3);
+    max-width: 56ch;
+  }
+
+  .contact-typical {
+    font-family: "Geist", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--text);
     margin-bottom: var(--space-5);
-    max-width: 52ch;
+    max-width: 56ch;
+  }
+
+  .contact-typical .mono-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-right: 0.75rem;
   }
 
   .contact-actions {
