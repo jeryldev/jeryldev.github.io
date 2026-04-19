@@ -25,6 +25,51 @@
       url: /blog/2026/04/18/namna-financial-independence-for-filipinos/
   featured: true
 
+- name: citruszest-ghostty.nvim
+  tagline: Dark Neovim colorscheme inspired by Citruszest and Ghostty terminal colors
+  description: Vibrant citrus accents on a true-dark ground. Treesitter and LSP semantic highlights, plugin support for Telescope, Snacks, Lazy, Which-key, Noice, GitSigns, Mini, and IndentBlankline. Terminal colors exported so your shell, editor, and terminal all agree.
+  date: 2026-03-26
+  tech:
+    - Lua
+    - Neovim
+    - Treesitter
+    - LSP
+  status: Open source
+  highlights:
+    - Single palette shared between Neovim and Ghostty
+    - Citrus orange (#ff8c00), mint green (#00cc7a), cyan (#48d1cc), signal blue (#00bfff)
+    - Treesitter + LSP semantic token coverage
+    - Terminal colors exported for shell + editor consistency
+  links:
+    - label: GitHub
+      url: https://github.com/jeryldev/citruszest-ghostty.nvim
+    - label: Blog Post
+      url: /blog/2026/03/26/citruszest-ghostty-nvim-colorscheme/
+  featured: true
+
+- name: obsidian-cli.nvim
+  tagline: Thin Neovim wrapper over the official Obsidian CLI
+  description: Drives the live Obsidian app from inside Neovim instead of reimplementing the vault format in Lua. ~2,000 LOC, 44 commands, 122 plenary tests, and real Obsidian search, backlinks, templates, and Bases via IPC.
+  date: 2026-04-08
+  tech:
+    - Lua
+    - Neovim
+    - Obsidian CLI
+    - Plenary
+  status: Open source
+  highlights:
+    - Wraps the official obsidian CLI instead of a 4-5k LOC Lua reimplementation
+    - Real Obsidian search index, backlinks, templates, and Bases via IPC
+    - 122 plenary tests across 12 spec files with CI integration
+    - blink.cmp wiki link completion and Snacks picker integration
+    - Plugin manager that installs Obsidian community plugins from Neovim
+  links:
+    - label: GitHub
+      url: https://github.com/jeryldev/obsidian-cli.nvim
+    - label: Blog Post
+      url: /blog/2026/04/18/obsidian-cli-nvim-wrap-dont-reimplement/
+  featured: true
+
 - name: pyworks.nvim
   tagline: Zero-config Python notebooks in Neovim
   description: Eliminates setup friction for Python development in terminal. Auto-creates venvs, detects missing packages, renders matplotlib plots inline.
