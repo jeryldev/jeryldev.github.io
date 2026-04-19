@@ -5,8 +5,6 @@ permalink: /namna-support/
 description: "Get help with Namna — common questions about data storage, backups, inflation handling, bank connections, refunds, and the tech stack. Direct email support included."
 ---
 
-# Namna Support
-
 Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.
 
 ## Common Questions

@@ -5,8 +5,6 @@ permalink: /namna/
 description: "An offline-first Philippine financial independence planner for iPhone. Estimate when your savings and investments may support the life you want — with MP2, PERA, RTBs, SSS, GSIS. No accounts, no tracking."
 ---
 
-# Namna
-
 **A people-first Philippine financial independence planner. Estimate when your savings and investments may support the life you want — without accounts, ads, or tracking.**
 
 <div style="text-align: center; margin: 2rem 0;">
