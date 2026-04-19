@@ -465,14 +465,11 @@ header {
   color: var(--text);
   padding: var(--space-2) 0;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 9999;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: var(--space-3);
 }
 
 main {
@@ -558,7 +555,7 @@ nav a.active {
   }
 
   html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: var(--space-3);
   }
 }
 
