@@ -418,7 +418,7 @@ hr {
 .badge + .badge::before {
   content: "·";
   margin: 0 0.4rem;
-  color: var(--border);
+  color: var(--text-tertiary);
 }
 
 /* Tag container for proper spacing when wrapping */

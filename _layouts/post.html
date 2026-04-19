@@ -105,9 +105,18 @@ layout: default
 
   .post-meta .tags {
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     gap: 0;
     margin-left: 0;
+  }
+
+  /* Badges inside .post-meta match the surrounding text baseline + size */
+  .post-meta .badge {
+    padding: 0;
+    font-size: 0.6875rem;
+    line-height: 1;
+    color: var(--text-tertiary);
+    letter-spacing: 0.1em;
   }
 
   .reading-time {

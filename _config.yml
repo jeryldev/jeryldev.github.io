@@ -1,10 +1,11 @@
 # Jekyll configuration for GitHub Pages
 title: Jeryl Donato Estopace
-tagline: Software engineer in Manila. Problem solver. Shipping tools that solve real problems.
+tagline: Software engineer and solution builder in Manila. Ships web apps, iOS apps, AI apps, and developer tools.
 description: >-
-  Jeryl Donato Estopace — software engineer in Manila. Writes Elixir, Phoenix, Ecto,
-  Ash, Python, JavaScript, TypeScript, React, Expo, and Lua. Shipping Namna (Philippine
-  financial independence planner), sajj, obsidian-cli.nvim, pyworks.nvim, and citruszest-ghostty.nvim.
+  Jeryl Donato Estopace — software engineer and solution builder in Manila. Ships
+  end-to-end products: web apps, iOS apps (Namna), AI apps (sajj), and developer
+  tools (obsidian-cli.nvim, pyworks.nvim, citruszest-ghostty.nvim, dev-session-manager).
+  Research on AI-human workflow boundaries at AIM (MIB).
 url: "https://jeryldev.github.io"
 baseurl: ""
 lang: en_PH
