@@ -583,8 +583,9 @@ footer {
   font-size: 0.875rem;
 }
 
-footer .container {
+.footer-inner {
   max-width: var(--width-index);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
