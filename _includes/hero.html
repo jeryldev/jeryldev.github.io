@@ -28,7 +28,10 @@
         </div>
         <div class="hero-stack-row">
           <dt>Stack</dt>
-          <dd><a href="/uses/">See full setup →</a></dd>
+          <dd class="stack-lines">
+            <span>Elixir · Phoenix · Ecto · PostgreSQL · Ash · Python · JavaScript</span>
+            <span>TypeScript · Expo · React · Lua · Bash</span>
+          </dd>
         </div>
       </dl>
 
@@ -94,6 +97,10 @@
     grid-template-columns: 6rem 1fr;
     column-gap: var(--space-2);
     align-items: baseline;
+  }
+
+  .stack-lines span {
+    display: block;
   }
 
   .hero-stack dt {
