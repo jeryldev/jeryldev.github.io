@@ -118,7 +118,7 @@ permalink: /uses/
   }
 
   .uses-header {
-    margin: 0 auto var(--space-8);
+    margin: 0 auto var(--space-6);
     max-width: var(--width-index);
   }
 
@@ -146,6 +146,11 @@ permalink: /uses/
     margin: 0 auto var(--space-6);
     padding-top: var(--space-5);
     border-top: 1px solid var(--border);
+  }
+
+  .uses-block:first-of-type {
+    border-top: none;
+    padding-top: 0;
   }
 
   .uses-group {

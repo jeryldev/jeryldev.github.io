@@ -106,10 +106,8 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   }
 
   .contact-form {
-    padding: var(--space-5) 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin-bottom: var(--space-6);
+    padding: var(--space-5) 0 var(--space-2);
+    margin-bottom: var(--space-5);
   }
 
   .form-group {

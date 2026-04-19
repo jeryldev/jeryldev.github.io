@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wrap, Don't Reimplement: Building obsidian-cli.nvim"
-date: 2026-04-18 14:00:00 +0800
+date: 2026-04-12 14:00:00 +0800
 tags: [Neovim, Lua, Obsidian, Developer Tools, Open Source]
 excerpt: "I built a Neovim plugin for Obsidian as a thin wrapper over Obsidian's official CLI — not a Lua reimplementation of the vault format. Here's why 2,000 lines beat 4,500 lines once the official CLI shipped."
 ---
@@ -76,7 +76,7 @@ That's the whole "toggle task" implementation. I'm not trying to be clever. The 
 I had two experiences this year that pushed me toward "wrap, don't reimplement" as a default:
 
 1. Building [Namna](/namna/), a Philippine financial independence planner, where I decided to start from existing Philippine tax rules and SSS pension formulas rather than invent my own — because the real rules are the source of truth.
-2. Getting an App Store rejection under [Guideline 5.2.5](/blog/2026/04/18/first-app-store-rejection-guideline-5-2-5/) for a habit tracker that reimplemented something that was already Apple's turf.
+2. Getting an App Store rejection under [Guideline 5.2.5](/blog/2026/02/18/first-app-store-rejection-guideline-5-2-5/) for a habit tracker that reimplemented something that was already Apple's turf.
 
 Both pointed at the same lesson: **reimplementations have to be actively maintained to stay synchronized with the source. Wrappers inherit for free.**
 
@@ -102,4 +102,4 @@ If you run Neovim, keep Obsidian in the background, and want to try it: [install
 
 ---
 
-_This post is part of a series on indie development choices I've made in 2026. If "wrap, don't reimplement" resonates, you might also like the [RingTrack rejection post](/blog/2026/04/18/first-app-store-rejection-guideline-5-2-5/) or the [Namna launch post](/blog/2026/04/18/namna-financial-independence-for-filipinos/)._
+_This post is part of a series on indie development choices I've made in 2026. If "wrap, don't reimplement" resonates, you might also like the [RingTrack rejection post](/blog/2026/02/18/first-app-store-rejection-guideline-5-2-5/) or the [Namna launch post](/blog/2026/04/18/namna-financial-independence-for-filipinos/)._

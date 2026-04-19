@@ -83,7 +83,6 @@ permalink: /projects/
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    border-top: 1px solid var(--border);
     max-width: var(--width-index);
   }
 

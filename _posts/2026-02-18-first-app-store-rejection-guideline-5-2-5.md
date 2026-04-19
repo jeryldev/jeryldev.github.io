@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First App Store Rejection, and Why I'm Okay With It"
-date: 2026-04-18 12:00:00 +0800
+date: 2026-02-18 12:00:00 +0800
 tags: [iOS, App Store, watchOS, Indie, Lessons, RingTrack]
 excerpt: "I spent four weekends building my first Apple Watch app with an accompanying iPhone companion. Designed it, coded it, submitted it, and got rejected under Guideline 5.2.5 — a trademark issue. Here's what I learned, and why I'm genuinely fine with it."
 ---
