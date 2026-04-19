@@ -45,7 +45,7 @@ Even though I've worked with web technologies for years, this project was a nice
 
 ## Live Website
 
-[Click here to see the website](https://jeryldev.github.io/)
+[Click here to see the website](https://jeryldev.com/)
 
 ## Requirements I Completed
 

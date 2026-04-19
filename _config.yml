@@ -6,7 +6,7 @@ description: >-
   end-to-end products: web apps, iOS apps (Namna), AI apps (sajj), and developer
   tools (obsidian-cli.nvim, pyworks.nvim, citruszest-ghostty.nvim, dev-session-manager).
   Research on AI-human workflow boundaries at AIM (MIB).
-url: "https://jeryldev.github.io"
+url: "https://jeryldev.com"
 baseurl: ""
 lang: en_PH
 locale: en_PH
@@ -16,7 +16,7 @@ timezone: Asia/Manila
 author:
   name: Jeryl Donato Estopace
   twitter: jeryldev
-  url: https://jeryldev.github.io
+  url: https://jeryldev.com
   email: jeryldevsocial@gmail.com
   image: /images/jeryl.jpg
 
