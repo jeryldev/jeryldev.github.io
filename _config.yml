@@ -1,19 +1,48 @@
 # Jekyll configuration for GitHub Pages
-title: jeryldev
-description: Builder. Problem Solver. Perpetually Curious.
+title: Jeryl Donato Estopace
+tagline: Software engineer in Manila. Problem solver. Shipping tools that solve real problems.
+description: >-
+  Jeryl Donato Estopace — software engineer in Manila. Writes Elixir, Phoenix, Ash,
+  React Native, Swift, and Lua. Shipping Namna (Philippine financial independence planner),
+  obsidian-cli.nvim, pyworks.nvim, and citruszest-ghostty.nvim.
 url: "https://jeryldev.github.io"
 baseurl: ""
+lang: en_PH
+timezone: Asia/Manila
 
-# Author info for meta tags
+# Author info for meta tags + jekyll-seo-tag
 author:
   name: Jeryl Donato Estopace
   twitter: jeryldev
+  url: https://jeryldev.github.io
+  email: jeryldevsocial@gmail.com
   image: /images/jeryl.jpg
+
+# jekyll-seo-tag / social cards
+twitter:
+  username: jeryldev
+  card: summary_large_image
+
+social:
+  name: Jeryl Donato Estopace
+  links:
+    - https://github.com/jeryldev
+    - https://www.linkedin.com/in/jeryldev/
+    - https://twitter.com/jeryldev
+
+logo: /images/jeryl.jpg
+
+# Default social share image (overridable per post via `image:` frontmatter)
+image: /images/jeryl.jpg
 
 # Build settings
 markdown: kramdown
-theme: null  # We're using custom CSS
-future: true  # Show posts with future dates
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+theme: null
+future: true
 
 # Pagination
 paginate: 6
@@ -22,6 +51,11 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feed
+feed:
+  path: /feed.xml
 
 # Collections
 collections:
@@ -29,7 +63,7 @@ collections:
     output: true
     permalink: /blog/:year/:month/:day/:title/
 
-# Defaults
+# Defaults — every post gets author + default SEO image fallback
 defaults:
   - scope:
       path: ""
@@ -37,8 +71,18 @@ defaults:
     values:
       layout: "post"
       author: "Jeryl Donato Estopace"
+      image: /images/jeryl.jpg
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image: /images/jeryl.jpg
 
 # Exclude files from processing
 exclude:
   - README.md
   - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - docs/
