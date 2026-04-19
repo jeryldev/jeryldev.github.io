@@ -2,16 +2,17 @@
 layout: default
 title: Contact
 permalink: /contact/
-description: "Tell me what's broken. Direct problem diagnosis across accounting, finance, legal tech, and software — any industry welcome. No pitch, no positioning."
+description: "Consulting and solution-building inquiries. Accepting a small number of engagements each quarter — Elixir/Phoenix backends, React Native apps, AI workflows, developer tools."
 ---
 
 <section class="section contact-page-section">
   <div class="container">
     <div class="contact-page">
       <header class="contact-page-header">
-        <span class="section-eyebrow">Get in touch</span>
-        <h1 class="contact-page-title">Tell me what's broken.</h1>
-        <p class="contact-page-dek">Direct, honest problem diagnosis. My background spans accounting, finance, and legal tech. Tell me what's failing and I'll tell you if I can fix it — no pitch, no positioning. Any industry welcome.</p>
+        <span class="section-eyebrow">Consulting</span>
+        <h1 class="contact-page-title">Working on something?</h1>
+        <p class="contact-page-dek">I take on a small number of consulting and solution-building engagements each quarter. If you're shipping a product and need an engineer who can take it end-to-end — strategy, architecture, and code — tell me what you're building.</p>
+        <p class="contact-page-engagements"><span class="mono-label">Typical work</span> Elixir / Phoenix backends · React Native apps · AI workflows · Developer tools</p>
       </header>
 
       <form id="contact-form" class="contact-form">
@@ -26,21 +27,27 @@ description: "Tell me what's broken. Direct problem diagnosis across accounting,
         </div>
 
         <div class="form-group">
-          <label for="problem">What problem are you facing?</label>
-          <textarea id="problem" name="problem" rows="5" required placeholder="What's broken? What's frustrating? What have you tried?"></textarea>
+          <label for="project">What are you building?</label>
+          <textarea id="project" name="project" rows="5" required placeholder="A product, a feature, a rebuild, a prototype — what's the shape of the work?"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="solved">What would &ldquo;solved&rdquo; look like? <span class="form-optional">(optional)</span></label>
-          <textarea id="solved" name="solved" rows="3" placeholder="How would you know it's fixed?"></textarea>
+          <label for="success">What does success look like? <span class="form-optional">(optional)</span></label>
+          <textarea id="success" name="success" rows="3" placeholder="How would you know the engagement worked?"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Send via email →</button>
-        <p class="form-note">Opens your email client with the message pre-filled.</p>
+        <div class="form-group">
+          <label for="timeline">Timeline <span class="form-optional">(optional)</span></label>
+          <input type="text" id="timeline" name="timeline" placeholder="e.g., 2-week discovery, 3-month build, ongoing advisory">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Tell me about your project →</button>
+        <p class="form-note">Opens your email client with the message pre-filled. Response within a few days.</p>
       </form>
 
       <aside class="contact-alt">
-        <p><span class="mono-label">Direct</span> <a href="mailto:jeryldevsocial@gmail.com">Send an email</a></p>
+        <p class="contact-alt-heading">Just saying hi?</p>
+        <p><span class="mono-label">Email</span> <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
         <p><span class="mono-label">Elsewhere</span>
           <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" rel="noopener">LinkedIn</a>
           <span class="sep">·</span>
@@ -57,16 +64,18 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
   const name = document.getElementById('name').value;
   const industry = document.getElementById('industry').value;
-  const problem = document.getElementById('problem').value;
-  const solved = document.getElementById('solved').value;
+  const project = document.getElementById('project').value;
+  const success = document.getElementById('success').value;
+  const timeline = document.getElementById('timeline').value;
 
-  const subject = encodeURIComponent('Problem in ' + (industry || 'my industry'));
+  const subject = encodeURIComponent('Consulting inquiry' + (industry ? ' — ' + industry : ''));
   const body = encodeURIComponent(
     'Hi Jeryl,\n\n' +
     'My name is ' + name + '.\n\n' +
     (industry ? 'Industry/Domain: ' + industry + '\n\n' : '') +
-    'The Problem:\n' + problem + '\n\n' +
-    (solved ? 'What "solved" looks like:\n' + solved + '\n\n' : '') +
+    'What I\'m building:\n' + project + '\n\n' +
+    (success ? 'What success looks like:\n' + success + '\n\n' : '') +
+    (timeline ? 'Timeline: ' + timeline + '\n\n' : '') +
     'Looking forward to hearing from you.'
   );
 
@@ -104,6 +113,25 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     line-height: 1.6;
     color: var(--text-secondary);
     max-width: 56ch;
+    margin-bottom: var(--space-3);
+  }
+
+  .contact-page-engagements {
+    font-family: "Geist", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--text);
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  .contact-alt-heading {
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 0 0 var(--space-2) !important;
+    letter-spacing: -0.01em;
   }
 
   .contact-form {
