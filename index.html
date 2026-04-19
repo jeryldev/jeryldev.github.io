@@ -9,59 +9,152 @@ title: Home
 
 {% include about-condensed.html %}
 
-<section id="recent-posts" class="section-sm" style="background-color: var(--card-bg);">
+<section id="recent-posts" class="section-sm recent-posts-section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Recent Writing</h2>
-      <p class="section-subtitle">Technical deep-dives and project retrospectives</p>
+      <span class="section-eyebrow">Writing</span>
+      <h2 class="section-title">Recent notes</h2>
     </div>
 
-    <div class="grid-2">
-      {% for post in site.posts limit:2 %}
-      <div class="card">
-        <h3 class="card-title">
-          <a href="{{ post.url | relative_url }}" style="color: var(--secondary); text-decoration: none;">
-            {{ post.title }}
-          </a>
-        </h3>
-        <div class="post-meta" style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">
-          {{ post.date | date: "%B %d, %Y" }}
-          {% if post.tags %}
-            <span style="margin: 0 0.5rem;">·</span>
-            <span class="tags">
-              {% for tag in post.tags limit:2 %}
-                <span class="badge badge-secondary" style="font-size: var(--text-xs);">{{ tag }}</span>
-              {% endfor %}
-            </span>
-          {% endif %}
-        </div>
-        <p class="card-body">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <a href="{{ post.url | relative_url }}" class="btn btn-ghost btn-sm">Read More →</a>
-      </div>
+    <ul class="recent-posts-list">
+      {% for post in site.posts limit:3 %}
+      <li class="recent-post-item">
+        <time class="recent-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <a class="recent-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p class="recent-post-dek">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
-    <div style="text-align: center; margin-top: var(--space-6);">
-      <a href="/blog/" class="btn btn-primary">View All Posts</a>
+    <div class="recent-posts-cta">
+      <a href="/blog/" class="btn btn-ghost">View all posts →</a>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section-sm" style="background-color: var(--dark-bg); color: var(--text-light);">
+<section id="contact" class="section-sm contact-section">
   <div class="container">
-    <h2 class="section-title" style="color: var(--text-light); border-color: var(--primary-light);">Let's Talk</h2>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-      <p style="font-size: var(--text-lg); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
-        Have a problem worth solving? I'm curious about challenges across industries — not just tech.
-        <br>
-        Tell me what's broken.
-      </p>
-
-      <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
-        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
-        <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" class="btn btn-secondary">LinkedIn</a>
-        <a href="https://github.com/jeryldev" target="_blank" class="btn btn-secondary">GitHub</a>
+    <div class="contact-inner">
+      <span class="section-eyebrow">Get in touch</span>
+      <h2 class="contact-title">Have a problem worth solving?</h2>
+      <p class="contact-dek">I'm curious about challenges across industries — not just tech. Tell me what's broken and I'll tell you honestly whether I can help.</p>
+      <div class="contact-actions">
+        <a href="/contact/" class="btn btn-primary">Send a note →</a>
+        <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/jeryldev" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .recent-posts-section {
+    background: var(--light-bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .recent-posts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .recent-post-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.2s ease;
+  }
+
+  .recent-post-item:hover {
+    padding-left: 0.75rem;
+  }
+
+  .recent-post-date {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .recent-post-title {
+    font-family: "Geist", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s ease;
+  }
+
+  .recent-post-title:hover {
+    color: var(--primary);
+  }
+
+  .recent-post-dek {
+    font-family: "Geist", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  .recent-posts-cta {
+    margin-top: var(--space-5);
+  }
+
+  @media (min-width: 768px) {
+    .recent-post-item {
+      grid-template-columns: 8rem 1fr;
+      column-gap: var(--space-5);
+      align-items: baseline;
+    }
+    .recent-post-date {
+      padding-top: 0.5rem;
+    }
+  }
+
+  .contact-section {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .contact-inner {
+    max-width: 42rem;
+  }
+
+  .contact-title {
+    font-family: "Geist", sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    line-height: 1.15;
+    letter-spacing: -0.028em;
+    color: var(--secondary);
+    margin-bottom: var(--space-3);
+    font-weight: 600;
+  }
+
+  .contact-dek {
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-5);
+    max-width: 52ch;
+  }
+
+  .contact-actions {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+</style>

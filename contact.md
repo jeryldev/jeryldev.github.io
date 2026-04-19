@@ -4,38 +4,24 @@ title: Contact
 permalink: /contact/
 ---
 
-<section class="section">
+<section class="section contact-page-section">
   <div class="container">
     <div class="contact-page">
-      <div class="section-header">
-        <h1 class="section-title">Let's Talk</h1>
-        <p class="section-subtitle">Have a problem worth solving? I'd love to hear about it.</p>
-      </div>
-
-      <div class="contact-intro">
-        <p>
-          I'm genuinely curious about problems across industries — not just tech.
-          Whether you're in healthcare, education, logistics, retail, or something I've never encountered,
-          I want to understand what's broken and why.
-        </p>
-        <p>
-          My background spans accounting, finance, and legal tech, but the pattern is always the same:
-          understand the real problem first, then figure out if technology can help.
-        </p>
-        <p>
-          <strong>No pitch required.</strong> Just tell me what you're dealing with.
-        </p>
-      </div>
+      <header class="contact-page-header">
+        <span class="section-eyebrow">Get in touch</span>
+        <h1 class="contact-page-title">Tell me what's broken.</h1>
+        <p class="contact-page-dek">Direct, honest problem diagnosis. My background spans accounting, finance, and legal tech. Tell me what's failing and I'll tell you if I can fix it — no pitch, no positioning. Any industry welcome.</p>
+      </header>
 
       <form id="contact-form" class="contact-form">
         <div class="form-group">
-          <label for="name">Your Name</label>
+          <label for="name">Your name</label>
           <input type="text" id="name" name="name" required placeholder="What should I call you?">
         </div>
 
         <div class="form-group">
-          <label for="industry">Industry / Domain</label>
-          <input type="text" id="industry" name="industry" placeholder="e.g., Healthcare, Education, Logistics, Finance...">
+          <label for="industry">Industry or domain</label>
+          <input type="text" id="industry" name="industry" placeholder="Healthcare, education, logistics, finance…">
         </div>
 
         <div class="form-group">
@@ -44,25 +30,22 @@ permalink: /contact/
         </div>
 
         <div class="form-group">
-          <label for="solved">What would "solved" look like? (optional)</label>
+          <label for="solved">What would &ldquo;solved&rdquo; look like? <span class="form-optional">(optional)</span></label>
           <textarea id="solved" name="solved" rows="3" placeholder="How would you know it's fixed?"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Send via Email</button>
-        <p class="form-note">This will open your email client with the message pre-filled.</p>
+        <button type="submit" class="btn btn-primary">Send via email →</button>
+        <p class="form-note">Opens your email client with the message pre-filled.</p>
       </form>
 
-      <div class="contact-alt">
-        <p>Prefer to write directly? <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
-      </div>
-
-      <div class="contact-social">
-        <p>You can also find me on:</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" class="btn btn-ghost">LinkedIn</a>
-          <a href="https://github.com/jeryldev" target="_blank" class="btn btn-ghost">GitHub</a>
-        </div>
-      </div>
+      <aside class="contact-alt">
+        <p><span class="mono-label">Direct</span> <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
+        <p><span class="mono-label">Elsewhere</span>
+          <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/jeryldev" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </aside>
     </div>
   </div>
 </section>
@@ -91,49 +74,75 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 </script>
 
 <style>
+  .contact-page-section {
+    padding: var(--space-8) 0 var(--space-10);
+  }
+
   .contact-page {
-    max-width: 900px;
+    max-width: 42rem;
     margin: 0 auto;
   }
 
-  .contact-intro {
+  .contact-page-header {
     margin-bottom: var(--space-6);
-    font-size: var(--text-base);
-    line-height: var(--leading-relaxed);
   }
 
-  .contact-intro p {
-    margin-bottom: var(--space-3);
+  .contact-page-title {
+    font-family: "Geist", sans-serif;
+    font-size: clamp(1.875rem, 4vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.028em;
+    color: var(--secondary);
+    margin: var(--space-1) 0 var(--space-3);
+    font-weight: 600;
+  }
+
+  .contact-page-dek {
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 56ch;
   }
 
   .contact-form {
-    background: var(--card-bg);
-    padding: var(--space-6);
-    border-left: 4px solid var(--primary);
+    padding: var(--space-5) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     margin-bottom: var(--space-6);
   }
 
   .form-group {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
   }
 
   .form-group label {
     display: block;
-    font-weight: var(--font-semibold);
+    font-family: "Geist", sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
     color: var(--secondary);
-    margin-bottom: var(--space-1);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.4rem;
+    text-transform: none;
+  }
+
+  .form-optional {
+    color: var(--text-tertiary);
+    font-weight: 400;
   }
 
   .form-group input,
   .form-group textarea {
     width: 100%;
-    padding: var(--space-2);
-    font-size: var(--text-base);
-    font-family: inherit;
-    border: 2px solid var(--border);
+    padding: 0.65rem 0.85rem;
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
     background: var(--light-bg);
     color: var(--text);
-    transition: border-color 0.3s ease;
+    transition: border-color 0.2s ease;
   }
 
   .form-group input:focus,
@@ -144,63 +153,56 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
   .form-group input::placeholder,
   .form-group textarea::placeholder {
-    color: var(--text-secondary);
-    opacity: 0.7;
+    color: var(--text-tertiary);
   }
 
   .form-group textarea {
     resize: vertical;
-    min-height: 100px;
-  }
-
-  .contact-form .btn {
-    width: 100%;
-    padding: var(--space-3);
-    font-size: var(--text-lg);
+    min-height: 7rem;
   }
 
   .form-note {
-    text-align: center;
-    font-size: var(--text-sm);
-    color: var(--text-secondary);
-    margin-top: var(--space-2);
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 768px) {
-    .contact-form .btn {
-      width: auto;
-      padding: var(--space-2) var(--space-6);
-      font-size: var(--text-base);
-    }
+    font-family: "Geist", sans-serif;
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin: 0.75rem 0 0;
   }
 
   .contact-alt {
-    text-align: center;
-    margin-bottom: var(--space-6);
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-4);
+    font-family: "Geist", sans-serif;
+    font-size: 0.9375rem;
     color: var(--text-secondary);
+  }
+
+  .contact-alt p {
+    margin: 0.35rem 0;
   }
 
   .contact-alt a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .contact-alt a:hover {
     color: var(--primary);
-    font-weight: var(--font-medium);
+    border-bottom-color: var(--primary);
   }
 
-  .contact-social {
-    text-align: center;
-    padding-top: var(--space-6);
-    border-top: 2px solid var(--border);
+  .mono-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-right: 0.75rem;
   }
 
-  .contact-social p {
-    color: var(--text-secondary);
-    margin-bottom: var(--space-3);
-  }
-
-  .contact-social .social-links {
-    display: flex;
-    gap: var(--space-3);
-    justify-content: center;
-    flex-wrap: wrap;
+  .contact-alt .sep {
+    color: var(--border);
+    margin: 0 0.5rem;
   }
 </style>

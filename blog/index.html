@@ -3,39 +3,112 @@ layout: default
 title: Blog
 ---
 
-<section class="section">
+<section class="section blog-section">
   <div class="container">
-    <div class="section-header">
+    <header class="section-header blog-header">
+      <span class="section-eyebrow">Writing</span>
       <h1 class="section-title">Blog</h1>
-      <p class="section-subtitle">Technical deep-dives, project retrospectives, and developer tools</p>
-    </div>
+      <p class="section-subtitle">Essays, project retrospectives, and notes from building things.</p>
+    </header>
 
-    <div class="grid-2">
+    <ol class="blog-index">
       {% for post in site.posts %}
-      <article class="card">
-        <h3 class="card-title">
-          <a href="{{ post.url | relative_url }}" style="color: var(--secondary); text-decoration: none;">
-            {{ post.title }}
-          </a>
-        </h3>
-        <div class="blog-meta" style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">
-          {{ post.date | date: "%B %d, %Y" }}
-          {% if post.tags %}
-            <span style="margin: 0 0.5rem;">·</span>
-            <span class="tags">
-              {% for tag in post.tags %}
-                <span class="badge badge-secondary" style="font-size: var(--text-xs);">{{ tag }}</span>
-              {% endfor %}
-            </span>
-          {% endif %}
-        </div>
-        <div class="blog-excerpt" style="line-height: var(--leading-relaxed); margin-bottom: var(--space-3); color: var(--text);">
-          {{ post.excerpt | strip_html | truncatewords: 50 }}
-        </div>
-        <a href="{{ post.url | relative_url }}" class="btn btn-ghost btn-sm">Read full article →</a>
-      </article>
+        <li class="blog-index-item">
+          <time class="blog-index-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y · %b %-d" }}</time>
+          <div class="blog-index-body">
+            <a class="blog-index-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% if post.tags %}
+              <div class="blog-index-tags">
+                {% for tag in post.tags limit: 3 %}<span class="badge">{{ tag }}</span>{% endfor %}
+              </div>
+            {% endif %}
+            <p class="blog-index-excerpt">{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
+          </div>
+        </li>
       {% endfor %}
-    </div>
+    </ol>
   </div>
 </section>
 
+<style>
+  .blog-section {
+    padding: var(--space-8) 0 var(--space-10);
+  }
+
+  .blog-header {
+    margin-bottom: var(--space-6);
+    max-width: 42rem;
+  }
+
+  .blog-index {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--border);
+    max-width: 48rem;
+  }
+
+  .blog-index-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: var(--space-5) 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .blog-index-date {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .blog-index-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .blog-index-title {
+    font-family: "Geist", sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    letter-spacing: -0.022em;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s ease;
+  }
+
+  .blog-index-title:hover {
+    color: var(--primary);
+  }
+
+  .blog-index-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .blog-index-excerpt {
+    font-family: "Geist", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    .blog-index-item {
+      grid-template-columns: 9rem 1fr;
+      column-gap: var(--space-5);
+      align-items: baseline;
+    }
+    .blog-index-date {
+      padding-top: 0.5rem;
+    }
+  }
+</style>
