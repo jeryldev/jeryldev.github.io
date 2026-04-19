@@ -2,7 +2,7 @@
 layout: default
 title: Uses — Tools and Stack
 permalink: /uses/
-description: "The tools and technologies behind the software I ship: Neovim with citruszest-ghostty, Ghostty terminal, tmux with dev-session-manager, Elixir, Phoenix, Ash, React Native, and more."
+description: "The tools and technologies behind the software I ship: Neovim with citruszest-ghostty, Ghostty, tmux with dev-session-manager, Elixir, Phoenix, Ecto, Ash, Python, React, and Expo."
 ---
 
 <section class="uses-section">
@@ -56,15 +56,15 @@ description: "The tools and technologies behind the software I ship: Neovim with
       <dl class="uses-list">
         <div class="uses-row">
           <dt>Backend</dt>
-          <dd>Elixir, Phoenix, Ash, Ecto, PostgreSQL</dd>
-        </div>
-        <div class="uses-row">
-          <dt>Mobile</dt>
-          <dd>React Native (Expo), TypeScript, Swift</dd>
+          <dd>Elixir, Phoenix, Ecto, PostgreSQL, Ash</dd>
         </div>
         <div class="uses-row">
           <dt>Frontend</dt>
-          <dd>Phoenix LiveView, Tailwind CSS</dd>
+          <dd>Phoenix LiveView, Tailwind CSS, JavaScript, TypeScript</dd>
+        </div>
+        <div class="uses-row">
+          <dt>Mobile</dt>
+          <dd>Expo (React Native), TypeScript</dd>
         </div>
         <div class="uses-row">
           <dt>Storage</dt>
@@ -72,11 +72,15 @@ description: "The tools and technologies behind the software I ship: Neovim with
         </div>
         <div class="uses-row">
           <dt>Infrastructure</dt>
-          <dd>Fly.io, AWS</dd>
+          <dd>Fly.io, AWS, Vercel</dd>
         </div>
         <div class="uses-row">
           <dt>AI / ML</dt>
-          <dd>Python, Claude API, RAG, embeddings, vector DBs</dd>
+          <dd>Python, Claude API, Gemini API, RAG, embeddings, vector DBs</dd>
+        </div>
+        <div class="uses-row">
+          <dt>Scripting</dt>
+          <dd>Lua (Neovim plugins), Bash (automation)</dd>
         </div>
       </dl>
     </div>
