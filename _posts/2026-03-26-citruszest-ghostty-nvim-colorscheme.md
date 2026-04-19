@@ -114,4 +114,4 @@ The palette is MIT-licensed and the whole plugin is open source. PRs welcome, es
 
 ---
 
-_This colorscheme's accent — `#ff8c00` — is the same orange you see across this site. The portfolio and the editor use the same palette for the same reason terminals and editors should: one visual system, one set of meanings._
+_The `#00cc7a` mint green in this palette is the same accent you see across this site. Portfolio and editor use the same palette for the same reason terminals and editors should: one visual system, one set of meanings._

@@ -37,7 +37,7 @@
   status: Open source
   highlights:
     - Single palette shared between Neovim and Ghostty
-    - Citrus orange (#ff8c00), mint green (#00cc7a), cyan (#48d1cc), signal blue (#00bfff)
+    - Mint green (#00cc7a), cyan (#48d1cc), sky blue (#00bfff), warm orange (#ff8c00) citrus accents
     - Treesitter + LSP semantic token coverage
     - Terminal colors exported for shell + editor consistency
   links:

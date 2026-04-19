@@ -1,21 +1,21 @@
-/* Engineer's Notebook — neutral zinc + citruszest orange accent */
+/* Engineer's Notebook — neutral zinc + citruszest mint green */
 /* Near-black on near-white for terminal-grade precision */
-/* Accent is citruszest-ghostty.nvim's signature orange (#ff8c00) */
+/* Accent is citruszest-ghostty.nvim green — mint that echoes the cursor color */
 /* Type: Geist everywhere, Geist Mono for labels, code, and data */
 :root {
   /* Colors */
-  --primary: #A04800;         /* Citruszest orange, darkened for AA contrast on paper */
-  --primary-hover: #7A3700;   /* Deeper — hover */
-  --primary-light: #FF8C00;   /* Full citruszest orange — dark-mode accent */
+  --primary: #067046;         /* Darkened citruszest green — AA on paper */
+  --primary-hover: #04502F;   /* Deeper mint — hover */
+  --primary-light: #1affa3;   /* Citruszest green_bright — dark-mode accent */
   --secondary: #0A0A0A;       /* Near-black — headings */
   --light-bg: #FAFAFA;        /* Neutral paper ground */
   --card-bg: #F4F4F5;         /* Zinc-100 — card lift */
   --dark-bg: #0A0A0A;         /* Near-black — header/footer */
   --text: #0A0A0A;            /* Near-black — body */
   --text-secondary: #52525B;  /* Zinc-600 — secondary */
-  --text-tertiary: #71717A;   /* Zinc-500 — meta (bumped from 400 for AAA) */
+  --text-tertiary: #71717A;   /* Zinc-500 — meta */
   --text-light: #FAFAFA;      /* Paper — text on dark */
-  --border: #E4E4E7;          /* Zinc-200 — 1px dividers */
+  --border: #D4D4D8;          /* Zinc-300 — 1px dividers (bumped from zinc-200 for visibility) */
   --shadow: transparent;
   --code-bg: #F4F4F5;         /* Zinc-100 — inline code */
 
@@ -330,7 +330,7 @@ hr {
 .btn-ghost {
   background-color: transparent;
   color: var(--text);
-  border-color: var(--border);
+  border: 1px solid var(--text-tertiary);
 }
 
 .btn-ghost:hover {
@@ -632,9 +632,9 @@ footer a:hover {
 
 /* Dark mode — matches citruszest-ghostty.nvim ground (#121212) vibe */
 [data-theme="dark"] {
-  --primary: #FF8C00;           /* Citruszest orange — full brightness on dark */
-  --primary-hover: #FFB347;     /* Warmer orange — hover */
-  --primary-light: #FFB347;
+  --primary: #1affa3;           /* Citruszest green_bright — vibrant on dark */
+  --primary-hover: #00cc7a;     /* Citruszest green — hover */
+  --primary-light: #00cc7a;
   --secondary: #FAFAFA;         /* Near-white — headings */
   --light-bg: #0A0A0A;          /* Near-black ground */
   --card-bg: #18181B;           /* Zinc-900 — card lift */
