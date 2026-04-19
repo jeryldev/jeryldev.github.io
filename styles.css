@@ -20,6 +20,10 @@
   --code-bg: #F4F4F5;         /* Zinc-100 — inline code */
   --btn-primary-text: #FAFAFA; /* Primary button label — white on dark-green */
 
+  /* Layout widths — two sizes, centered everywhere */
+  --width-prose: 42rem;       /* Long-form reading: post, contact */
+  --width-index: 56rem;       /* Everything else: hero, about, blog, uses, projects, recent */
+
   /* Type Scale — bigger display range (1.333 ratio at the top) */
   --text-xs: 0.75rem;     /* 12px */
   --text-sm: 0.875rem;    /* 14px */
@@ -434,7 +438,7 @@ hr {
 .section-header {
   text-align: left;
   margin-bottom: var(--space-5);
-  max-width: 42rem;
+  max-width: var(--width-index);
 }
 
 .section-title {

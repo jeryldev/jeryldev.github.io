@@ -57,13 +57,21 @@
   }
 
   .section-header {
-    margin-bottom: var(--space-6);
+    margin: 0 auto var(--space-6);
+    max-width: var(--width-index);
   }
 
   .featured-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-4);
+    max-width: var(--width-index);
+    margin: 0 auto;
+  }
+
+  .featured-cta {
+    max-width: var(--width-index);
+    margin: var(--space-6) auto 0;
   }
 
   @media (min-width: 768px) {

@@ -119,7 +119,7 @@ permalink: /uses/
 
   .uses-header {
     margin: 0 auto var(--space-8);
-    max-width: 48rem;
+    max-width: var(--width-index);
   }
 
   .uses-title {
@@ -142,7 +142,7 @@ permalink: /uses/
   }
 
   .uses-block {
-    max-width: 48rem;
+    max-width: var(--width-index);
     margin: 0 auto var(--space-6);
     padding-top: var(--space-5);
     border-top: 1px solid var(--border);
@@ -201,7 +201,7 @@ permalink: /uses/
   }
 
   .uses-footer {
-    max-width: 48rem;
+    max-width: var(--width-index);
     margin: var(--space-8) auto 0;
     padding-top: var(--space-4);
     border-top: 1px solid var(--border);

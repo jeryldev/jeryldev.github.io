@@ -79,7 +79,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   }
 
   .contact-page {
-    max-width: 42rem;
+    max-width: var(--width-prose);
     margin: 0 auto;
   }
 
