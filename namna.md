@@ -107,3 +107,37 @@ Built with:
 ---
 
 **Disclaimer:** Namna provides planning estimates only. It is not financial advice and is not a substitute for consulting a licensed financial professional. Past performance and reference rates shown in the app do not guarantee future results.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Namna",
+  "alternateName": "Namna — Philippine Financial Independence Planner",
+  "description": "Offline-first Philippine financial independence planner for iPhone. Estimate when your savings and investments may support the life you want — with MP2, PERA, RTBs, SSS, GSIS. No accounts, no tracking.",
+  "applicationCategory": "FinanceApplication",
+  "applicationSubCategory": "Personal Finance",
+  "operatingSystem": "iOS",
+  "url": "{{ site.url }}/namna/",
+  "image": "{{ site.url }}/images/namna-icon.png",
+  "inLanguage": ["en", "fil"],
+  "countriesSupported": "PH",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "PHP",
+    "availability": "https://schema.org/InStock"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jeryl Donato Estopace",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Jeryl Donato Estopace",
+    "url": "{{ site.url }}"
+  },
+  "privacyPolicy": "{{ site.url }}/namna-privacy/"
+}
+</script>
