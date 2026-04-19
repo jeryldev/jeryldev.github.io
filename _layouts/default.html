@@ -9,10 +9,9 @@
     <!-- SEO: jekyll-seo-tag handles title, description, Open Graph, Twitter Card, JSON-LD, canonical -->
     {% seo %}
 
-    <!-- Favicons -->
+    <!-- Favicons — SVG primary (modern browsers), .ico fallback for legacy -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}" />
     <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}" />
 
     <!-- RSS Feed (jekyll-feed injects its own, but this link is helpful as a stable alias) -->
@@ -43,9 +42,14 @@
             <li><a href="{{ '/contact/' | relative_url }}"{% if page.url contains '/contact' %} class="active"{% endif %}>Contact</a></li>
           </ul>
         </nav>
-        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
-          <span class="icon-sun">☀️</span>
-          <span class="icon-moon">🌙</span>
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
         </button>
       </div>
     </header>

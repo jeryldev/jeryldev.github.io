@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>jeryldev</title>
+  <!-- citruszest-ghostty.nvim ground -->
+  <rect width="32" height="32" rx="7" fill="#121212"/>
+  <!-- Shell prompt chevron in citruszest green_bright (#1affa3) -->
+  <path d="M9 10 L14.5 16 L9 22"
+        stroke="#1affa3"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+  <!-- Terminal cursor block in citruszest green (#00cc7a) — the Ghostty cursor -->
+  <rect x="17" y="19" width="7" height="3.5" fill="#00cc7a"/>
+</svg>

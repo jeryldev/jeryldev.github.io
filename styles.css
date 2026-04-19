@@ -15,9 +15,10 @@
   --text-secondary: #52525B;  /* Zinc-600 — secondary */
   --text-tertiary: #71717A;   /* Zinc-500 — meta */
   --text-light: #FAFAFA;      /* Paper — text on dark */
-  --border: #D4D4D8;          /* Zinc-300 — 1px dividers (bumped from zinc-200 for visibility) */
+  --border: #D4D4D8;          /* Zinc-300 — 1px dividers */
   --shadow: transparent;
   --code-bg: #F4F4F5;         /* Zinc-100 — inline code */
+  --btn-primary-text: #FAFAFA; /* Primary button label — white on dark-green */
 
   /* Type Scale — bigger display range (1.333 ratio at the top) */
   --text-xs: 0.75rem;     /* 12px */
@@ -304,8 +305,9 @@ hr {
 
 .btn-primary {
   background-color: var(--primary);
-  color: #FAF8F2;
+  color: var(--btn-primary-text);
   border-color: var(--primary);
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -622,12 +624,17 @@ footer a:hover {
   color: var(--primary);
 }
 
+.dark-mode-toggle .icon-moon,
+.dark-mode-toggle .icon-sun {
+  display: block;
+}
+
 .dark-mode-toggle .icon-moon {
   display: none;
 }
 
 .dark-mode-toggle .icon-sun {
-  display: inline;
+  color: #D97706; /* Warm amber — sun */
 }
 
 /* Dark mode — matches citruszest-ghostty.nvim ground (#121212) vibe */
@@ -646,10 +653,12 @@ footer a:hover {
   --border: #27272A;            /* Zinc-800 */
   --shadow: transparent;
   --code-bg: #18181B;
+  --btn-primary-text: #0A0A0A;  /* Near-black on bright-mint button */
 }
 
 [data-theme="dark"] .dark-mode-toggle .icon-moon {
-  display: inline;
+  display: block;
+  color: #00cc7a; /* Citruszest mint — moon */
 }
 
 [data-theme="dark"] .dark-mode-toggle .icon-sun {
