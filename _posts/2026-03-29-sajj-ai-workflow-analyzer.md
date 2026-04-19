@@ -13,7 +13,7 @@ The question keeps coming up, and it keeps being asked wrong.
 
 The right question is: **which specific steps of your work can AI realistically handle today, which need human oversight, and which should stay human?** That's a per-step question, not a per-role question, and the answer changes by industry, by risk level, and by how tightly the work is structured.
 
-I built [sajj](https://sajj.dev) (pronounced "sɑːdʒ") to answer that question honestly, for any workflow, in under two minutes.
+I built [sajj](https://sajj.app) (pronounced "sɑːdʒ") to answer that question honestly, for any workflow, in under two minutes.
 
 ## What It Does
 
@@ -92,7 +92,7 @@ Three early takeaways from the first batch of submissions:
 
 ## Try It
 
-[sajj.dev](https://sajj.dev) — free, no signup, 2 minutes.
+[sajj.app](https://sajj.app) — free, no signup, 2 minutes.
 
 If sajj gets your process wrong, I want to know. That's where the real insights are, and anonymized correction data directly feeds my research at AIM. The tool has built-in correction flags on every step so you can tell it exactly *where* it's wrong without having to email me.
 
