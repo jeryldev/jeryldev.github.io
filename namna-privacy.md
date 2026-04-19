@@ -128,7 +128,7 @@ Namna is a planning tool, not financial advice:
 
 If you have questions about this privacy policy:
 
-**[Contact Support](/namna-support/)** or email [jeryldevsocial@gmail.com](mailto:jeryldevsocial@gmail.com)
+**[Contact Support](/namna-support/)** or [send an email](mailto:jeryldevsocial@gmail.com)
 
 ## Legal
 

@@ -93,7 +93,7 @@ React Native with Expo, TypeScript, SQLite for on-device storage, Zustand for st
   </form>
 
   <div class="support-alt">
-    <p>Prefer to write directly? <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
+    <p>Prefer to write directly? <a href="mailto:jeryldevsocial@gmail.com">Send an email</a></p>
     <p><a href="/namna-privacy/">Privacy Policy</a> · <a href="/namna/">Product Page</a></p>
   </div>
 </div>

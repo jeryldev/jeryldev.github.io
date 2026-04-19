@@ -39,7 +39,7 @@ permalink: /contact/
       </form>
 
       <aside class="contact-alt">
-        <p><span class="mono-label">Direct</span> <a href="mailto:jeryldevsocial@gmail.com">jeryldevsocial@gmail.com</a></p>
+        <p><span class="mono-label">Direct</span> <a href="mailto:jeryldevsocial@gmail.com">Send an email</a></p>
         <p><span class="mono-label">Elsewhere</span>
           <a href="https://www.linkedin.com/in/jeryldev/" target="_blank" rel="noopener">LinkedIn</a>
           <span class="sep">·</span>
