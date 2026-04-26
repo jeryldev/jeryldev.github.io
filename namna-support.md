@@ -2,7 +2,7 @@
 layout: page
 title: Namna Support
 permalink: /namna-support/
-description: "Get help with Namna — common questions about data storage, backups, inflation handling, bank connections, refunds, and the tech stack. Direct email support included."
+description: "Get help with Namna — common questions about on-device storage, Excel exports, What If changes, inflation, iPhone support, and refunds. Direct email support included."
 ---
 
 Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.
@@ -11,7 +11,7 @@ Have a question, found a bug, or want to suggest a feature? I'd love to hear fro
 
 ### Where is my data stored?
 
-Your plan stays on your iPhone using on-device SQLite. Nothing is sent to a server. If you want a copy for another device, you can export a JSON backup or Excel workbook from the More tab.
+Your plan stays on your iPhone using on-device storage. Nothing is sent to a server. If you want a copy for your own records, you can export an Excel workbook from the More tab.
 
 ### Does Namna connect to my bank, broker, or government agencies?
 
@@ -19,15 +19,28 @@ No. Namna does not connect to banks, brokers, Pag-IBIG, SSS, GSIS, or any extern
 
 ### How do I move my plan to another device?
 
-1. On the old device, open the More tab and create a JSON backup
-2. Share the backup to yourself (email, Files, AirDrop)
-3. On the new device, paste the backup back into Namna
+There is **not currently a user-facing full restore flow** for moving your plan from one device to another.
 
-The Excel workbook export is for your own records and is not meant to be reimported.
+Right now:
+
+- The **Excel workbook export** is for your own records, review, or sharing
+- It is **not** meant to be reimported into the app
+- If a future release adds a supported migration flow, this page will be updated
 
 ### Why is my independence age still far away?
 
-The estimate depends on your current savings, monthly savings, retirement target, and expected long-term growth. Small changes to savings rate, target spending, or your foundation mix can move the estimate meaningfully. Try a future scenario to compare options side-by-side.
+The estimate depends on your current savings, monthly savings, retirement target, and the long-term assumptions behind the money you added. Small changes to your savings rate, target spending, or money mix can move the estimate meaningfully. What If changes can also make the result later or earlier depending on the costs and money changes you add.
+
+### How do What If changes work?
+
+What If changes let you test a different version of your future without changing your main plan.
+
+Right now they can include:
+
+- **Money changes** for specific items you already have
+- **Temporary costs** such as tuition, repairs, caregiving, or a career break
+
+These changes only affect that saved What If version. Your main plan stays the same unless you edit the main plan separately.
 
 ### Does Namna include inflation?
 
@@ -39,7 +52,15 @@ No. Namna is a planning tool that shows estimates under the assumptions you set.
 
 ### What happens to my data if I uninstall?
 
-Everything is deleted. Because nothing is stored on a server, uninstalling removes all of your plan data permanently. Export a JSON backup or Excel workbook first if you want a copy.
+Everything is deleted. Because nothing is stored on a server, uninstalling removes all of your plan data permanently. Export an Excel workbook first if you want a copy for your own records.
+
+### What are check-ins and progress history?
+
+Check-ins let you save a snapshot of your current plan after a meaningful update. Namna uses those saved snapshots to show your progress history over time on that same phone.
+
+- Check-ins stay on your device
+- They are not synced to a server
+- They help you compare how your estimate changes over time
 
 ### Is there an Android version?
 

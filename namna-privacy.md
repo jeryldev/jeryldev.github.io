@@ -2,10 +2,10 @@
 layout: page
 title: Namna Privacy Policy
 permalink: /namna-privacy/
-description: "Namna collects zero personal data. Your plan stays on your iPhone via on-device SQLite. No cloud sync, no analytics, no ads, no third-party SDKs."
+description: "Namna collects zero personal data. Your plan stays on your iPhone using on-device storage. No cloud sync, no analytics, no ads, and no third-party tracking SDKs."
 ---
 
-**Last Updated:** April 18, 2026
+**Last Updated:** April 26, 2026
 
 ## Overview
 
@@ -28,9 +28,9 @@ Namna is a privacy-first, offline financial independence planner for iPhone. We 
 
 ## Data Storage
 
-All plan data is stored **locally on your device** using on-device SQLite:
+All plan data is stored **locally on your device** using on-device storage:
 
-- Your age, take-home pay, monthly savings, retirement target, foundation items, and future scenarios are stored only on your iPhone
+- Your age, take-home pay, monthly savings, retirement target, money items, saved What If changes, language preference, and saved check-in history are stored only on your iPhone
 - Data stays on your device and is never transmitted to our servers
 - We have no servers — there is nothing to transmit data to
 
@@ -38,43 +38,37 @@ All plan data is stored **locally on your device** using on-device SQLite:
 
 Namna **does not currently use iCloud sync**.
 
-If we add iCloud sync in a future version:
-
-- Your data would sync between your own Apple devices via your personal iCloud account
-- This would be handled entirely by Apple's infrastructure
-- We would have no access to your iCloud data
-- You would be able to disable iCloud sync in Settings at any time
+If that changes in a future release, this privacy policy will be updated before the feature ships.
 
 ## Backups and Exports
 
-Namna lets you create backups and exports that you control:
+Namna lets you create exports that you control:
 
-- **JSON backup** — a text snapshot of your plan you can paste back into the app on another device
-- **Excel workbook export** — a spreadsheet of your profile, foundation, and future scenarios
+- **Excel workbook export** — a workbook that summarizes your plan inputs, money today, What If changes, and projection data
 
-These exports are created only when you ask for them and are shared through the iOS share sheet to a destination you choose (Files, email, Messages, etc.). Namna does not upload them anywhere.
+The workbook is created only when you ask for it and is shared through the iOS share sheet to a destination you choose, such as Files, Mail, or Messages. Namna does not upload it anywhere.
 
 ## Notifications
 
 Namna does not use push notifications and does not send marketing notifications.
 
-## Tip Jar and In-App Purchases
+## Payments
 
-If Namna offers in-app purchases (such as a one-time unlock or a tip):
+If you purchase Namna through the App Store:
 
-- Purchases are processed entirely by Apple through StoreKit
-- We receive only aggregated sales data from Apple (no personal information)
-- We never see your payment information, credit card numbers, or billing address
-- Apple handles all payment processing securely
+- Payment is handled entirely by Apple
+- We do not receive your credit card number or billing details
+- Apple may provide us with limited transaction reporting, but not the personal financial information you used to pay
 
 ## Data You Control
 
 You have complete control over your data:
 
-- **Delete foundation items:** Remove any savings or investment item from your plan at any time
+- **Delete money items:** Remove any savings or investment item from your plan at any time
+- **Delete What If changes:** Remove saved What If changes at any time
 - **Clear your plan:** "Clear local plan" in the More tab wipes all plan data from your device
 - **Delete the app:** Uninstalling Namna permanently deletes all plan data
-- **Export first:** Before clearing or deleting, you can export an Excel workbook or JSON backup to keep a copy
+- **Export first:** Before clearing or deleting, you can export an Excel workbook to keep a copy for your own records
 
 ## Third-Party Services
 
@@ -101,7 +95,7 @@ If we make changes to this privacy policy, we will:
 
 While we don't collect your data, we take local storage seriously:
 
-- All data is stored using iOS on-device SQLite
+- All data is stored locally on your device
 - Your device's built-in encryption protects your data at rest
 - No network transmission means no interception risk
 
@@ -111,7 +105,7 @@ Under GDPR, the Philippines Data Privacy Act (RA 10173), CCPA, and similar priva
 
 - **Right to access:** All your data is visible in the app
 - **Right to deletion:** Delete items, clear your plan, or uninstall the app
-- **Right to portability:** Export an Excel workbook or JSON backup at any time
+- **Right to portability:** Export an Excel workbook at any time
 - **Right to opt-out:** Nothing to opt out of — we don't collect data
 
 ## Financial Disclaimer
@@ -137,7 +131,7 @@ Apple, iPhone, and iOS are trademarks of Apple Inc., registered in the U.S. and 
 
 ---
 
-**Summary:** Namna is a local-first app. Your plan stays on your device. We don't collect, store, or transmit your personal data. Namna provides estimates only, not financial advice.
+**Summary:** Namna is a local-first iPhone app. Your plan stays on your device. We don't collect, store, or transmit your personal data. Namna provides planning estimates only, not financial advice.
 
 ---
 
