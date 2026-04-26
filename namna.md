@@ -13,7 +13,7 @@ description: "An offline-first Philippine financial independence planner for iPh
 
 ## What Namna Does
 
-Namna takes five simple inputs — your age, take-home pay, monthly savings, monthly retirement target, and current foundation — and gives you a clear estimate of when your money could be enough to support the life you want.
+Namna takes five simple inputs — your age, take-home pay, monthly savings, monthly retirement target, and the money you already have today — and gives you a clear estimate of when your money could be enough to support the life you want.
 
 No accounts. No bank connections. No cloud sync. Your plan stays on your phone.
 
@@ -22,8 +22,9 @@ No accounts. No bank connections. No cloud sync. Your plan stays on your phone.
 - **Offline-first** — Everything runs on your phone, even with no internet
 - **Take-home pay first** — Works with the number that actually reaches your account, not gross income
 - **Built for Philippine vehicles** — MP2, PERA, RTBs, PSE stocks, SSS, GSIS, time deposits, digital banks
-- **Future scenarios** — Model life changes (new house, tuition, career break) without changing your current plan
-- **Excel and JSON exports** — Your data is yours to take anywhere
+- **What If changes** — Test life changes (new house, tuition, career break) without changing your current plan
+- **Check-ins and progress history** — Save snapshots over time and see what changed in your plan
+- **Excel workbook export** — Keep a clear copy of your plan for your own records
 - **English and Filipino** — Full bilingual support
 - **No account, no ads, no tracking** — Private by design
 - **One-time purchase** — No subscription, no upsells
@@ -47,7 +48,7 @@ Your plan stays on your devices:
 - No account creation, no login, no email
 - No cloud sync, no server
 - No analytics, no crash reporting, no advertising SDKs
-- All data stored locally using on-device SQLite
+- All data stored locally on your device
 
 ## What Namna Is Not
 
@@ -73,7 +74,7 @@ Every projection is an **estimate** under the assumptions you set. Real-world re
   </a>
 </div>
 
-_Available soon on the App Store_
+_Submitted to App Store Connect and processing for release_
 
 ## Support
 

@@ -7,11 +7,12 @@
     - Expo
     - TypeScript
     - SQLite
-  status: App Store submission pending
+  status: Submitted to App Store Connect
   highlights:
     - Take-home-pay-first inputs (not gross salary)
     - Presets for MP2, PERA, PSE, RTBs, SSS, GSIS, and more
-    - Future scenarios to model life changes without changing the current plan
+    - What If changes to test life changes without changing the current plan
+    - Check-ins and progress history on device
     - English and Filipino throughout
     - All data stays on the device — SQLite, no backend
   links:
