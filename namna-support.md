@@ -11,7 +11,7 @@ Have a question, found a bug, or want to suggest a feature? I'd love to hear fro
 
 ### Where is my data stored?
 
-Your plan stays on your iPhone using on-device storage. Nothing is sent to a server. If you want a copy for your own records, you can export an Excel workbook from the More tab.
+Your plan stays on your iPhone using on-device storage. Nothing is sent to a server. If you want a copy for your own records, you can export an Excel workbook from Help in the More tab.
 
 ### How much does Namna cost?
 

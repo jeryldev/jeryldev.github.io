@@ -68,7 +68,7 @@ You have complete control over your data:
 
 - **Delete money items:** Remove any savings or investment item from your plan at any time
 - **Delete What If changes:** Remove saved What If changes at any time
-- **Clear your plan:** "Clear local plan" in the More tab wipes all plan data from your device
+- **Clear your plan:** "Clear local plan" in More > Settings wipes all plan data from your device
 - **Delete the app:** Uninstalling Namna permanently deletes all plan data
 - **Export first:** Before clearing or deleting, you can export an Excel workbook to keep a copy for your own records
 
