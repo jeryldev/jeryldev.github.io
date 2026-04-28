@@ -1,95 +1,145 @@
 ---
 layout: page
-title: Namna — Philippine Financial Independence Planner for iPhone
+title: Namna — Private Financial Planning App for Filipinos on iPhone
 permalink: /namna/
-description: "An offline-first Philippine financial independence planner for iPhone. Estimate when your savings and investments may support the life you want — with MP2, PERA, RTBs, SSS, GSIS. No accounts, no tracking."
+description: "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device. Launch price: ₱99 one-time."
+image: /images/namna-screenshots/03-home-current-plan.png
 ---
 
-**A people-first Philippine financial independence planner. Estimate when your savings and investments may support the life you want — without accounts, ads, or tracking.**
+<div class="namna-product-intro">
+  <p class="namna-kicker">Private · iPhone-only · English + Filipino</p>
+  <p class="namna-lede"><strong>Namna is a private financial planning app for Filipinos.</strong> It helps you understand your current plan, compare future What If changes, and keep everything on your iPhone without accounts, ads, or tracking.</p>
+  <div class="namna-meta">
+    <span class="badge">Launch price: ₱99 one-time</span>
+    <span class="badge">No subscription</span>
+    <span class="badge">App Store page not public yet</span>
+    <span class="badge">All data stays on device</span>
+  </div>
+</div>
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/images/namna-icon.png" alt="Namna App Icon" style="width: 150px; height: 150px; border-radius: 25px;" />
 </div>
 
-## What Namna Does
+<figure class="namna-shot namna-shot-hero">
+  <img src="/images/namna-screenshots/03-home-current-plan.png" alt="Namna home screen showing the current plan estimate and chart" />
+  <figcaption>The current-plan screen leads with the estimate, then shows the chart and gentle next-step prompts.</figcaption>
+</figure>
 
-Namna takes five simple inputs — your age, take-home pay, monthly savings, monthly retirement target, and the money you already have today — and gives you a clear estimate of when your money could be enough to support the life you want.
+## What kind of app is Namna?
 
-No accounts. No bank connections. No cloud sync. Your plan stays on your phone.
+Namna is still a **planner**. It is not a budgeting app, a bank dashboard, or an execution platform.
 
-## Features
+It helps you:
 
-- **Offline-first** — Everything runs on your phone, even with no internet
-- **Take-home pay first** — Works with the number that actually reaches your account, not gross income
-- **Built for Philippine vehicles** — MP2, PERA, RTBs, PSE stocks, SSS, GSIS, time deposits, digital banks
-- **What If changes** — Test life changes (new house, tuition, career break) without changing your current plan
-- **Check-ins and progress history** — Save snapshots over time and see what changed in your plan
-- **Excel workbook export** — Keep a clear copy of your plan for your own records
-- **English and Filipino** — Full bilingual support
-- **No account, no ads, no tracking** — Private by design
-- **One-time purchase** — No subscription, no upsells
+- understand where your current plan stands
+- add the money you already have today
+- compare future life changes without overwriting your main plan
+- see automatic local progress snapshots on the same phone
+- keep a readable workbook export for your own records
 
-## Built for the Philippines
+If the clearest label is one phrase, it is this:
 
-Most financial independence tools are built for US 401(k)s and Roth IRAs. Namna starts from what Filipinos actually use:
+> **A private financial planning app for Filipinos on iPhone.**
 
-- **MP2 (Pag-IBIG)** with a conservative dividend proxy
-- **PERA** with the ₱200K/year contribution cap
-- **RTBs and corporate bonds** with coupon-style yield
-- **PSE stocks** with a conservative market-return planning rate
-- **SSS and GSIS pensions** estimated from your salary basis and service years
+## What Namna does today
+
+- **Current plan estimate** — start from age, take-home pay, monthly savings, target monthly amount, and the money you already have
+- **Money Today** — add manual items like MP2, PERA, RTBs, digital banks, SSS, GSIS, and custom entries
+- **What If changes** — compare tuition, repairs, family support, career breaks, or savings changes against your main plan
+- **Automatic local snapshots** — keep progress history on the same phone without manual check-ins
+- **Excel workbook export** — keep a readable copy for your records or sharing
+- **English and Filipino UI** — the core app is bilingual today
+- **Local-first storage** — no account, no cloud sync, no analytics, no ads
+
+## What Namna does not claim
+
+- It does **not** connect to banks, brokers, Pag-IBIG, SSS, GSIS, or any outside system.
+- It does **not** use live market data.
+- It does **not** restore from the exported workbook.
+- It does **not** model inflation yet; amounts are shown in **today’s pesos**.
+- It does **not** promise a guaranteed age or outcome.
+- It does **not** give personal financial advice.
+
+Every result in Namna is a planning estimate under the assumptions in the app and the inputs you entered.
+
+## Inside the current build
+
+All screenshots below were taken from the current 6.5-inch build.
+
+<div class="namna-gallery">
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/01-welcome.png" alt="Namna onboarding welcome screen" />
+    <figcaption>Onboarding starts with a short, calm setup.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/04-plan-edit-allocation.png" alt="Namna plan edit screen showing future savings allocation" />
+    <figcaption>Plan editing makes future savings assumptions visible instead of hidden.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/05-money-today-overview.png" alt="Namna Money Today overview screen" />
+    <figcaption>Money Today summarizes what you already have in one place.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/06-money-today-detail.png" alt="Namna Money Today item detail screen" />
+    <figcaption>Each money item opens into a clean detail view with edit and delete actions.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/07-what-if-overview.png" alt="Namna What If overview screen" />
+    <figcaption>What If keeps saved changes separate from your current plan.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/02-what-if-editor.png" alt="Namna What If editor screen" />
+    <figcaption>You can build a change around future costs or money changes without touching the main plan.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/08-what-if-detail.png" alt="Namna What If detail screen" />
+    <figcaption>Each saved change has its own view page before you edit it.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/09-what-if-chart.png" alt="Namna What If chart comparing current plan and one saved change" />
+    <figcaption>The chart compares your current plan with one What If change at a time.</figcaption>
+  </figure>
+  <figure class="namna-shot">
+    <img src="/images/namna-screenshots/10-help-export.png" alt="Namna help screen describing export and glossary features" />
+    <figcaption>Help explains the app and the workbook export in plain language.</figcaption>
+  </figure>
+</div>
+
+## Built for Filipino financial reality
+
+Most planning apps start from US assumptions. Namna starts from what Filipinos actually use:
+
+- **MP2 (Pag-IBIG)**
+- **PERA** with its annual cap
+- **RTBs and corporate bonds**
+- **PSE stocks**
+- **SSS and GSIS**
 - **Time deposits, digital banks, and cooperative share capital**
-- **Custom items** for anything your plan includes that we don't
+- **Custom items** when your plan includes something outside the presets
 
-## Privacy First
+The app also uses **take-home pay**, not gross salary, because that is the number Filipino users actually plan around.
 
-Your plan stays on your devices:
+## Pricing and availability
 
-- No account creation, no login, no email
-- No cloud sync, no server
-- No analytics, no crash reporting, no advertising SDKs
-- All data stored locally on your device
-
-## What Namna Is Not
-
-Namna is a planning tool, not financial advice. It does not:
-
-- Connect to your bank, broker, or any financial institution
-- Execute trades, transfers, or any kind of transaction
-- Promise a specific return, age, or outcome
-- Model inflation — all amounts are shown in today's pesos
-- Give personalized investment recommendations
-
-Every projection is an **estimate** under the assumptions you set. Real-world results will differ.
-
-## Requirements
-
-- iPhone running iOS 15.1 or later
-
-## Download
+- **Launch price:** `₱99 one-time`
+- **Business model:** no subscription
+- **Platform:** iPhone only
+- **Current status:** the support/privacy pages are live, but the App Store listing itself is not public yet
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="https://apps.apple.com/app/namna" class="btn btn-primary">
-    Download on the App Store
-  </a>
-</div>
-
-_Submitted to App Store Connect and processing for release_
-
-## Support
-
-Have a question, found a bug, or want to suggest a feature?
-
-<div style="margin: 2rem 0;">
-  <a href="/namna-support/" class="btn btn-ghost">Contact Support</a>
+  <a href="/contact/" class="btn btn-primary">Ask About Launch</a>
+  <a href="/namna-support/" class="btn btn-ghost">Support</a>
   <a href="/namna-privacy/" class="btn btn-ghost">Privacy Policy</a>
 </div>
+
+The App Store button will go here as soon as the listing is public.
 
 ---
 
 ## About the Developer
 
-Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of wanting a planning tool that starts from Filipino take-home reality and stays private by default.
+Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of wanting a planning tool that starts from Filipino take-home reality, stays private by default, and speaks more honestly than a generic retirement calculator.
 
 Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [GitHub](https://github.com/jeryldev)
 
@@ -109,26 +159,87 @@ Built with:
 
 **Disclaimer:** Namna provides planning estimates only. It is not financial advice and is not a substitute for consulting a licensed financial professional. Past performance and reference rates shown in the app do not guarantee future results.
 
+<style>
+  .namna-product-intro {
+    margin-bottom: 2rem;
+  }
+
+  .namna-kicker {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-tertiary);
+    margin-bottom: 0.85rem;
+  }
+
+  .namna-lede {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .namna-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 1rem;
+  }
+
+  .namna-shot {
+    margin: 0 0 1.25rem;
+  }
+
+  .namna-shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+
+  .namna-shot figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+
+  .namna-shot-hero {
+    margin: 2rem 0 2.5rem;
+  }
+
+  .namna-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  @media (min-width: 720px) {
+    .namna-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Namna",
-  "alternateName": "Namna — Philippine Financial Independence Planner",
-  "description": "Offline-first Philippine financial independence planner for iPhone. Estimate when your savings and investments may support the life you want — with MP2, PERA, RTBs, SSS, GSIS. No accounts, no tracking.",
+  "alternateName": "Namna — Private Financial Planning App for Filipinos",
+  "description": "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device.",
   "applicationCategory": "FinanceApplication",
-  "applicationSubCategory": "Personal Finance",
-  "operatingSystem": "iOS",
+  "applicationSubCategory": "Financial Planning",
+  "operatingSystem": "iOS 15.1 or later",
   "url": "{{ site.url }}/namna/",
-  "image": "{{ site.url }}/images/namna-icon.png",
+  "image": "{{ site.url }}/images/namna-screenshots/03-home-current-plan.png",
   "inLanguage": ["en", "fil"],
   "countriesSupported": "PH",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "PHP",
-    "availability": "https://schema.org/InStock"
-  },
+  "isAccessibleForFree": false,
   "author": {
     "@type": "Person",
     "name": "Jeryl Donato Estopace",

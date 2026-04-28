@@ -77,7 +77,7 @@ That's the whole "toggle task" implementation. I'm not trying to be clever. The 
 
 I had two experiences this year that pushed me toward "wrap, don't reimplement" as a default:
 
-1. Building [Namna](/namna/), a Philippine financial independence planner, where I decided to start from existing Philippine tax rules and SSS pension formulas rather than invent my own — because the real rules are the source of truth.
+1. Building [Namna](/namna/), a private financial planning app for Filipinos, where I decided to start from existing Philippine tax rules and SSS pension formulas rather than invent my own — because the real rules are the source of truth.
 2. Getting an App Store rejection under [Guideline 5.2.5](/blog/2026/02/18/first-app-store-rejection-guideline-5-2-5/) for a habit tracker that reimplemented something that was already Apple's turf.
 
 Both pointed at the same lesson: **reimplementations have to be actively maintained to stay synchronized with the source. Wrappers inherit for free.**

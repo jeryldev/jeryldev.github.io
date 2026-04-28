@@ -5,11 +5,11 @@ permalink: /namna-privacy/
 description: "Namna collects zero personal data. Your plan stays on your iPhone using on-device storage. No cloud sync, no analytics, no ads, and no third-party tracking SDKs."
 ---
 
-**Last Updated:** April 26, 2026
+**Last Updated:** April 28, 2026
 
 ## Overview
 
-Namna is a privacy-first, offline financial independence planner for iPhone. We designed it so your plan data stays on your device. This policy explains what that means in practice.
+Namna is a privacy-first financial planning app for iPhone. We designed it so your plan data stays on your device. This policy explains what that means in practice.
 
 ## Data Collection
 
@@ -30,7 +30,7 @@ Namna is a privacy-first, offline financial independence planner for iPhone. We 
 
 All plan data is stored **locally on your device** using on-device storage:
 
-- Your age, take-home pay, monthly savings, retirement target, money items, saved What If changes, language preference, and saved check-in history are stored only on your iPhone
+- Your age, take-home pay, monthly savings, retirement target, money items, saved What If changes, language preference, and automatic local snapshot history are stored only on your iPhone
 - Data stays on your device and is never transmitted to our servers
 - We have no servers — there is nothing to transmit data to
 
@@ -47,6 +47,8 @@ Namna lets you create exports that you control:
 - **Excel workbook export** — a workbook that summarizes your plan inputs, money today, What If changes, and projection data
 
 The workbook is created only when you ask for it and is shared through the iOS share sheet to a destination you choose, such as Files, Mail, or Messages. Namna does not upload it anywhere.
+
+The workbook is for **your own records or sharing only**. It is **not** a restore or reimport format.
 
 ## Notifications
 

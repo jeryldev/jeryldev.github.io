@@ -1,135 +1,220 @@
 ---
 layout: post
-title: "Building Namna: A Financial Independence Planner for Filipinos"
+title: "Building Namna: A Private Financial Planning App for Filipinos"
 date: 2026-04-18
 tags: [React Native, Expo, TypeScript, Personal Finance, Philippines, Mobile]
-description: "Namna is an offline-first Philippine FI planner for iPhone. Built around take-home pay and local vehicles — MP2, PERA, RTBs, SSS, GSIS. Why I moved from FIRE to financial independence, and how amounts ship in today's pesos."
-image: /images/jeryl.jpg
-excerpt: "I built an offline iPhone app that estimates when your money could be enough — starting from Filipino take-home pay and local vehicles like MP2, PERA, SSS, and GSIS. Here's why, and what I learned along the way."
+description: "Namna is a private financial planning app for Filipinos on iPhone. Built around take-home pay, Money Today, What If changes, and local-first storage — with MP2, PERA, RTBs, SSS, and GSIS."
+image: /images/namna-screenshots/03-home-current-plan.png
+excerpt: "I built a private iPhone planning app for Filipinos that starts from take-home pay, local vehicles, and real-life What If changes. Here’s what changed as the product became more truthful and more useful."
 ---
 
-## The Problem: Most FIRE Tools Are Built for Someone Else
+> **Update — April 28, 2026:** The product has moved past its earlier “financial independence planner” framing. The clearest label now is **private financial planning app for Filipinos on iPhone**. It currently has no public App Store page yet, and the planned launch price is **₱99 one-time**.
 
-Every financial independence calculator I could find online was built around US 401(k) accounts, Roth IRAs, and a gross salary I don't get paid. Plugging Philippine numbers into them always felt like translating from a foreign language — and the translation was never quite right.
+## The Problem: Most Planning Tools Still Start From Someone Else’s Life
 
-A few examples of why:
+Every retirement or FIRE calculator I tried felt like it was translated from a different country, a different salary structure, and a different relationship with money.
 
-- They ask for **gross income**. Filipinos get paid **take-home**. The difference matters — payroll deductions, withholding, SSS, PhilHealth, Pag-IBIG, and 13th-month math don't map cleanly onto "just multiply annual expenses by 25."
-- They don't know what **MP2** is. Or **PERA**. Or **RTBs**. They certainly don't know the nuances of **SSS pension estimation** based on credited months.
-- They quietly assume **infinite account contribution room**. Philippine PERA has a ₱200K annual cap.
-- They tell you FIRE at 45. Most Filipinos reading that think, _"That's a US number. I have SSS until 60 and I want to stay close to family."_ The math is foreign AND the life assumption is foreign.
+The mismatch showed up immediately:
 
-I wanted a tool that started from Filipino reality. Not a spreadsheet I had to build and maintain myself — a calm app that estimated when my money could be enough, **given how I actually get paid and what I actually invest in.**
+- they asked for **gross income**, not the take-home number people actually plan around
+- they assumed US account types instead of **MP2, PERA, RTBs, SSS, and GSIS**
+- they quietly treated future contributions like abstract spreadsheet math instead of money that has to live somewhere real
+- they often sounded more certain than they had any right to be
 
-That's how Namna started.
+I didn’t want another “optimize your wealth” app. I wanted something calmer:
 
-## Enter Namna
+> a private app that helps a Filipino user understand where their current plan stands, what changes might help or hurt, and what the assumptions really are
 
-Namna is an offline-first Philippine financial independence planner for iPhone. It takes five inputs:
+That is the product Namna became.
 
-1. Your age
-2. Your monthly take-home pay
-3. Your monthly savings
-4. Your monthly retirement target (what you want available each month in retirement)
-5. Your current foundation — the savings and investments you already have
+## What Namna Actually Is
 
-And it returns a single, clear estimate: **the age when your savings and investments may support the monthly amount you want in retirement without relying on work income.**
+Namna is still a **planner**.
 
-No accounts. No bank connections. No cloud sync. The plan stays on your phone.
+That part matters.
 
-## Three Decisions That Shaped the Product
+It is not a budgeting app, not a bank connection layer, not a brokerage dashboard, and not a robo-advisor. The reason “planner” still fits is that the core job is:
 
-### 1. Financial Independence, not FIRE
+- map the money you already have
+- map the monthly savings you expect to keep adding
+- compare future What If changes
+- estimate when that overall plan may be enough
 
-Namna used to be positioned as a FIRE planner — the tool still uses the canonical math (goal amount ≈ 25× annual expenses, derived from a conservative 4% withdrawal rate). But the brand moved to **financial independence** because FIRE in the Philippines doesn't land the way it does in US forums.
+The simplest accurate description I’ve landed on is:
 
-Most Filipino salaried professionals I've talked to don't want to retire at 40. They want to know **when they'd have the option**. They want a floor of security, not an exit ticket. "Financial independence" frames the same math as _permission to choose_, not _obligation to quit_.
+> **Namna is a private financial planning app for Filipinos on iPhone.**
 
-The dashboard now reads "Your independence age" instead of "Your FIRE age." Same numbers. Different framing. Much broader audience.
+It starts from:
 
-### 2. Offline-First with No Accounts
+1. age
+2. take-home pay
+3. monthly savings
+4. the monthly amount you want your money to support
+5. the savings, investments, and retirement-support items you already have today
 
-The cheapest and fastest architecture for a planning app is a single-user offline app with local storage. Namna leans into this completely:
+From there, the app builds a planning estimate instead of a promise.
 
-- SQLite for persistence, wrapped with `expo-sqlite`
-- Zustand for in-memory state
-- Zero auth, zero backend, zero cloud
+## The Product Got Better When The Claims Got Smaller
 
-This means:
+One of the most important changes during development was learning to make the app more honest, not more impressive.
 
-- **No privacy risk.** There's no server to get breached.
-- **No subscription required.** There's no server cost to recoup.
-- **No forced account creation.** The friction from "sign up to see your estimate" kills the funnel for most planning apps.
-- **Works anywhere.** Metro traffic jam, provincial trip, airplane — Namna just works.
+That meant tightening what Namna claims in public and in the UI:
 
-The trade-off: no multi-device sync yet. You can export a JSON backup and import it on another device, which is workable. iCloud sync is a future option if users ask for it.
+- projections are **estimates**
+- amounts are shown in **today’s pesos**
+- inflation is **not modeled yet**
+- workbook export is **for records or sharing only**
+- workbook export is **not** a restore or reimport format
+- there are **no bank, broker, Pag-IBIG, SSS, or GSIS connections**
+- there are **no accounts, no cloud sync, no analytics, no ads**
 
-### 3. Built Around Philippine Vehicles
+That kind of truthfulness sounds smaller in marketing copy, but it makes the product feel much safer.
 
-The preset catalog is opinionated:
+For finance software, trust is a feature.
 
-- **Pag-IBIG MP2** with a conservative dividend-yield planning rate
-- **PERA** with the ₱200K/year contribution cap encoded
-- **PSE stocks** with a conservative growth + dividend split
-- **RTBs and corporate bonds** using coupon-style yield
-- **Time deposits and digital banks** separated so 2025 rates map cleanly
-- **Cooperative share capital** with a dividend planning proxy
-- **SSS and GSIS** modeled distinctly from investment items — they use salary basis + credited service months + claim age instead of a current amount
+## What Ships In The Current Build
 
-Every rate is a **conservative planning proxy**, not a guaranteed return. Users can customize any field. The goal is to start most plans from reasonable defaults so the first estimate is useful, not wishful.
+The current app is built around four surfaces:
 
-## What Namna Is Not
+### 1. Current plan
 
-This part matters more than the features list:
+The home screen leads with the main estimate first. That was deliberate. Users should understand the core answer before they get pulled into structure or detail.
 
-- Namna does not connect to your bank or broker
-- Namna does not execute trades or transfers
-- Namna does not model inflation — all amounts are shown in today's pesos
-- Namna does not give personalized investment advice
-- Namna does not promise a specific outcome
+<figure>
+  <img src="/images/namna-screenshots/03-home-current-plan.png" alt="Namna home screen showing the current plan estimate and chart" />
+  <figcaption>The current-plan view keeps the estimate first, then shows the chart and next-step prompts.</figcaption>
+</figure>
 
-Every projection is an **estimate** under the assumptions the user sets. The app says "may" and "could" and "estimate" throughout. This isn't legal hedging — it's the honest framing. Compound interest is a real force. So is sequence-of-returns risk. So is life. A planning tool's job is to help you reason about a range of futures, not promise a single one.
+### 2. Money Today
 
-## The Tech Stack
+This is the strongest part of the product UX right now. Users add the money they already have as clear, tappable items instead of a faceless total. It supports planning around things Filipinos actually use: MP2, PERA, RTBs, PSE stocks, digital banks, SSS, GSIS, and custom entries.
 
-A minimal, boring stack by design:
+<figure>
+  <img src="/images/namna-screenshots/05-money-today-overview.png" alt="Namna Money Today overview screen" />
+  <figcaption>Money Today turns a pile of balances into a visible, reviewable plan.</figcaption>
+</figure>
 
-- **React Native + Expo** — cross-platform ready, iOS first
-- **TypeScript** — strict mode, `noUnusedLocals` + `noUnusedParameters` on
-- **expo-sqlite** — on-device persistence, no backend
-- **Zustand** — simple state, no Redux overhead
-- **React Native SVG** — hand-rolled projection chart so we don't ship a 400KB charting library for one view
-- **ExcelJS** — lazy-loaded so the ~2MB library doesn't bloat startup; only pulled in when the user exports a workbook
-- **Jest + Maestro** — unit tests cover 35 suites / 210+ tests; Maestro handles end-to-end onboarding, holdings, and scenario flows
+### 3. What If changes
 
-Build story is plain Expo: `npx expo prebuild`, archive in Xcode, upload.
+The strongest product idea in Namna is that the user can save a future change without overwriting the current plan.
 
-## What I Learned Building This
+That makes the app useful for real decisions:
 
-**Start from the user's language, not the engine's language.** The internal code still has files called `fire.ts` and functions called `projectFirePlan`. That's fine — it's engineering naming. But the UI had to move off FIRE the moment I realized the audience wasn't the r/phinvest hardcore segment. Two naming layers: one for code, one for copy.
+- tuition
+- family support
+- repairs
+- career breaks
+- savings shifts
 
-**Offline-first is a moat, not a limitation.** Every time someone hears "your data stays on your phone," their posture changes. That's worth more than cloud sync for v1.
+<figure>
+  <img src="/images/namna-screenshots/09-what-if-chart.png" alt="Namna What If chart comparing the current plan and a saved change" />
+  <figcaption>What If compares one saved change against the current plan instead of burying the user in abstractions.</figcaption>
+</figure>
 
-**Conservative defaults protect everyone.** If MP2's planning rate is 6% and the user's actual dividends come in at 6.5%, they feel good. If the defaults were 7% and actuals were 6.5%, they feel tricked. Always round defaults toward conservatism.
+### 4. Local progress history
 
-**Ship the disclaimer inline, not just in legalese.** The reveal screen literally says "This estimate assumes..." and "Amounts are shown in today's pesos — inflation is not applied." That's doing work for both the user and the App Review process.
+Instead of asking users to do extra admin work, the app keeps automatic local snapshots on the same phone so progress history becomes part of the product rather than another chore.
+
+That change made the app feel more humane.
+
+## Why The App Feels Filipino
+
+A lot of software tries to become “local” through branding alone.
+
+What mattered more here was product structure:
+
+- start from **take-home pay**
+- support the instruments people actually know
+- let users plan around family obligations and temporary costs
+- stay usable even without internet
+- support both **English and Filipino**
+
+That is why Namna feels more believable than a generic FIRE calculator with Philippine numbers typed into it.
+
+## The Architecture Is Intentionally Small
+
+Namna is local-first by design:
+
+- **React Native + Expo**
+- **TypeScript**
+- **SQLite** for on-device persistence
+- **Zustand** for state
+- **React Native SVG** for the chart
+- **ExcelJS** for workbook export
+- **Jest + Maestro** for test coverage
+
+There is no backend.
+
+That is not a shortcut. It is a product choice.
+
+No server means:
+
+- lower privacy risk
+- lower operating cost
+- no forced account creation
+- no subscription pressure just to keep the lights on
+
+## What I’d Rather Be Honest About
+
+There are still things Namna does **not** do yet:
+
+- no inflation modeling
+- no live market data
+- no bank sync
+- no cross-device sync
+- no workbook restore
+- no guaranteed outcomes
+
+I think saying those things clearly makes the app stronger, not weaker.
+
+Finance products lose people the moment they feel slippery.
+
+## Pricing And Current Status
+
+The planned launch price is **₱99 one-time**.
+
+That felt like the right opening move:
+
+- low enough to reduce hesitation
+- still paid, which protects the no-ads / no-tracking posture
+- honest for a local-first utility app
+
+As of this update:
+
+- the support and privacy pages are live
+- the product screenshots reflect the current build
+- the App Store listing itself is **not public yet**
+
+When that changes, the product page at [/namna/](/namna/) will be the source of truth.
+
+## What I Learned Building It
+
+Three things mattered more than I expected:
+
+**1. Product language matters as much as math.**  
+“FIRE planner” was too narrow. “Private financial planning app for Filipinos” is broader and more accurate.
+
+**2. Trust surfaces are part of the product.**  
+Export wording, privacy wording, pricing, screenshot captions, and support copy all affect whether a finance app feels safe.
+
+**3. Restraint beats feature theater.**  
+The best parts of Namna are the parts that feel clear, quiet, and useful. Not the parts that try to sound bigger than they are.
 
 ## Where Namna Goes Next
 
-For v1.0, the focus is a calm, clear, honest estimate for Filipinos who want a floor under their plan — not a retirement calculator that pretends to know their future.
+The next wave of work is less about “more features” and more about better planning realism:
 
-Post-launch priorities:
+- clearer explanation of where monthly savings are assumed to go
+- stronger support for unstable income and family-support realities
+- better short-term goal framing alongside retirement
+- optional inflation-aware views without making the main product noisy
 
-- Native-speaker Filipino copy review before a broader public push
-- Cebuano and other Philippine languages, once reviewed
-- Inflation-aware projections as an opt-in view
-- Nudges like "if you saved an extra ₱1,000/mo, this moves to age X"
-- Maybe iCloud sync, if users ask
+The bar is simple:
 
-The app is small on purpose. My test for every feature idea is whether it helps someone understand their number better — not whether it makes Namna more like every other finance app.
+> if a careful Filipino user opens the app, reads the copy, and exports a workbook, they should never feel tricked
+
+That standard is shaping the product more than any single technical decision.
 
 ---
 
-**Namna is currently in App Store review.** When it lands, you'll find it at [/namna/](/namna/). It's an offline-first iPhone app, one-time purchase, no subscription, no tracking.
-
-_This is the kind of problem I enjoy working on — messy, specific to a market, and tractable with simple tools. If you've got a similar shape of problem, [I'd like to hear about it](/contact/)._
+_If you work on software in finance, regulated products, or local-market consumer apps, this is the kind of product problem I enjoy: specific, trust-sensitive, and full of hidden assumptions. [Say hello](/contact/) if that sounds like your world._

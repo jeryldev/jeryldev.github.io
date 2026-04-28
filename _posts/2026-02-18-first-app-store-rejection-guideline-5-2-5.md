@@ -84,7 +84,7 @@ Second, the rejection is survivable. Guideline 5.2.5 isn't a moral judgment. It'
 
 RingTrack the name is retired. The code is kept. The product concept — three habits, focus over breadth, wrist-first logging, local-only data — still stands on its own and doesn't need Apple's visual language to be useful. A rename with a non-ring metaphor and a different primary visualization is probably a weekend of work, not another four.
 
-I'll put it behind other things first, though. I have a Philippine financial independence planner called [Namna](/namna/) going into review next — and I applied the lesson there. I ran the name, the metaphor, and the category through the same checklist before I wrote a line of code.
+I'll put it behind other things first, though. At the time, I was getting [Namna](/namna/) — the private financial planning app for Filipinos I was building for iPhone — ready for review, and I applied the lesson there too. I ran the name, the metaphor, and the category through the same checklist before I wrote a line of code.
 
 If you're an indie developer reading this and you're about to ship your first iOS app, here's my one takeaway: **spend thirty minutes on trademark and visual-language research before you spend four weekends on a name that can't survive review.** Everything else you build will be ready to submit. The name is the part that can quietly cost you the weekend loop.
 

@@ -13,6 +13,12 @@ Have a question, found a bug, or want to suggest a feature? I'd love to hear fro
 
 Your plan stays on your iPhone using on-device storage. Nothing is sent to a server. If you want a copy for your own records, you can export an Excel workbook from the More tab.
 
+### How much does Namna cost?
+
+Namna is planned to launch at **₱99 one-time** on iPhone, with **no subscription**.
+
+If the public App Store listing or pricing changes before launch, this page will be updated first.
+
 ### Does Namna connect to my bank, broker, or government agencies?
 
 No. Namna does not connect to banks, brokers, Pag-IBIG, SSS, GSIS, or any external system. All values are entered manually and stay on your device.
@@ -27,7 +33,7 @@ Right now:
 - It is **not** meant to be reimported into the app
 - If a future release adds a supported migration flow, this page will be updated
 
-### Why is my independence age still far away?
+### Why is my estimate still far away?
 
 The estimate depends on your current savings, monthly savings, retirement target, and the long-term assumptions behind the money you added. Small changes to your savings rate, target spending, or money mix can move the estimate meaningfully. What If changes can also make the result later or earlier depending on the costs and money changes you add.
 
@@ -54,11 +60,11 @@ No. Namna is a planning tool that shows estimates under the assumptions you set.
 
 Everything is deleted. Because nothing is stored on a server, uninstalling removes all of your plan data permanently. Export an Excel workbook first if you want a copy for your own records.
 
-### What are check-ins and progress history?
+### What are snapshots and progress history?
 
-Check-ins let you save a snapshot of your current plan after a meaningful update. Namna uses those saved snapshots to show your progress history over time on that same phone.
+Namna keeps automatic local snapshots of your current plan on that same phone. Those saved snapshots help show your progress history over time without asking you to save anything manually each time.
 
-- Check-ins stay on your device
+- Snapshots stay on your device
 - They are not synced to a server
 - They help you compare how your estimate changes over time
 
