@@ -76,9 +76,9 @@ Not yet. Namna currently ships for iPhone only.
 
 Refunds for App Store purchases are handled directly by Apple. Visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request one.
 
-### What is Namna written in?
+### Does Namna use a server or account?
 
-React Native with Expo, TypeScript, SQLite for on-device storage, Zustand for state, and React Native SVG for the projection chart. There is no backend.
+No. Namna does not require an account, and it does not store your plan on a server. Your plan stays on your device unless you choose to export a workbook yourself.
 
 ## Contact
 

@@ -143,18 +143,6 @@ Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of w
 
 Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [GitHub](https://github.com/jeryldev)
 
-### Tech Stack
-
-Built with:
-
-- React Native with Expo
-- TypeScript
-- SQLite (expo-sqlite) for on-device persistence
-- Zustand for state
-- React Native SVG for the projection chart
-- ExcelJS for workbook exports
-- Jest for unit tests, Maestro for end-to-end flows
-
 ---
 
 **Disclaimer:** Namna provides planning estimates only. It is not financial advice and is not a substitute for consulting a licensed financial professional. Past performance and reference rates shown in the app do not guarantee future results.

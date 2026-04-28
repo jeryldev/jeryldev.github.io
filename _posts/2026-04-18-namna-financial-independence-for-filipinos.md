@@ -135,13 +135,10 @@ That is why Namna feels more believable than a generic FIRE calculator with Phil
 
 Namna is local-first by design:
 
-- **React Native + Expo**
-- **TypeScript**
-- **SQLite** for on-device persistence
-- **Zustand** for state
-- **React Native SVG** for the chart
-- **ExcelJS** for workbook export
-- **Jest + Maestro** for test coverage
+- a small mobile app stack
+- on-device storage
+- workbook export
+- no backend
 
 There is no backend.
 
