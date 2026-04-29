@@ -8,7 +8,7 @@ image: /images/namna-screenshots/03-home-current-plan.png
 
 <div class="namna-product-intro">
   <p class="namna-kicker">Private · iPhone-only · English + Filipino</p>
-  <p class="namna-lede"><strong>Namna is a private financial planning app for Filipinos.</strong> It helps you understand your current plan, compare future What If changes, and keep everything on your iPhone without accounts, ads, or tracking.</p>
+  <p class="namna-lede"><strong>When will your money be enough?</strong> That question became Namna: a private financial planning app for Filipinos on iPhone.</p>
   <div class="namna-meta">
     <span class="badge">₱99 one-time</span>
     <span class="badge">No subscription</span>
@@ -26,16 +26,32 @@ image: /images/namna-screenshots/03-home-current-plan.png
   <figcaption>The current-plan screen leads with the estimate, then shows the chart and gentle next-step prompts.</figcaption>
 </figure>
 
+## Why I made this
+
+I built Namna from a question I asked myself one day while walking:
+
+> **When will my money be enough?**
+
+At first, I tried answering it in an Excel file.
+
+The spreadsheet helped, but it did not feel like the right home for a question like that. It felt too mechanical for something that is actually personal, emotional, and tied to real tradeoffs. I wanted something calmer, clearer, and easier to return to.
+
+Then I started wondering if other Filipinos had been trying to answer the same question too.
+
+That became Namna.
+
 ## What kind of app is Namna?
 
-Namna is still a **planner**. It is not a budgeting app, a bank dashboard, or an execution platform.
+Namna is still a **planner**.
+
+It is not a budgeting app, not a bank dashboard, and not an execution platform.
 
 It helps you:
 
 - understand where your current plan stands
 - add the money you already have today
-- compare future life changes without overwriting your main plan
-- see automatic local progress snapshots on the same phone
+- compare future What If changes without overwriting your main plan
+- keep automatic local progress snapshots on the same phone
 - keep a readable workbook export for your own records
 
 If the clearest label is one phrase, it is this:
@@ -120,6 +136,14 @@ Most planning apps start from US assumptions. Namna starts from what Filipinos a
 
 The app also uses **take-home pay**, not gross salary, because that is the number Filipino users actually plan around.
 
+## Why the name is Namna
+
+Naming the app was harder than building the first version.
+
+I knew from the beginning that I wanted a Filipino-rooted name. I found the Ilokano word **namnama**, which carries meanings around hope, desire, and expectation. I shortened that inspiration into **Namna** and used it as the product name.
+
+For me, that felt right. Planning for the future is not just about math. It is also about hope.
+
 ## Pricing and availability
 
 - **Price:** `₱99 one-time`
@@ -137,7 +161,7 @@ The app also uses **take-home pay**, not gross salary, because that is the numbe
 
 ## About the Developer
 
-Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of wanting a planning tool that starts from Filipino take-home reality, stays private by default, and speaks more honestly than a generic retirement calculator.
+Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of a personal spreadsheet, a simple question, and a desire to build a planning tool that feels more respectful, more local, and more truthful than a generic retirement calculator.
 
 Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [App Store](https://apps.apple.com/us/app/namna/id6763838525)
 
