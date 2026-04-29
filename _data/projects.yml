@@ -7,7 +7,7 @@
     - Expo
     - TypeScript
     - SQLite
-  status: Launching at ₱99 one-time
+  status: Live on the App Store · ₱99 one-time
   highlights:
     - Current plan estimate built around take-home pay and Money Today
     - Presets for MP2, PERA, PSE, RTBs, SSS, GSIS, and more
@@ -17,6 +17,8 @@
     - English and Filipino throughout
     - All data stays on the device — SQLite, no backend
   links:
+    - label: App Store
+      url: https://apps.apple.com/us/app/namna/id6763838525
     - label: Product Page
       url: /namna/
     - label: Privacy Policy

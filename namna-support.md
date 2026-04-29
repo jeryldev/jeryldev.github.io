@@ -15,9 +15,9 @@ Your plan stays on your iPhone using on-device storage. Nothing is sent to a ser
 
 ### How much does Namna cost?
 
-Namna is planned to launch at **₱99 one-time** on iPhone, with **no subscription**.
+Namna is available on the App Store at **₱99 one-time** on iPhone, with **no subscription**.
 
-If the public App Store listing or pricing changes before launch, this page will be updated first.
+You can view the listing here: [Namna on the App Store](https://apps.apple.com/us/app/namna/id6763838525).
 
 ### Does Namna connect to my bank, broker, or government agencies?
 

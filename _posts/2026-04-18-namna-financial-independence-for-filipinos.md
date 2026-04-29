@@ -8,7 +8,7 @@ image: /images/namna-screenshots/03-home-current-plan.png
 excerpt: "I built a private iPhone planning app for Filipinos that starts from take-home pay, local vehicles, and real-life What If changes. Here’s what changed as the product became more truthful and more useful."
 ---
 
-> **Update — April 28, 2026:** The product has moved past its earlier “financial independence planner” framing. The clearest label now is **private financial planning app for Filipinos on iPhone**. It currently has no public App Store page yet, and the planned launch price is **₱99 one-time**.
+> **Update — April 29, 2026:** The product has moved past its earlier “financial independence planner” framing. The clearest label now is **private financial planning app for Filipinos on iPhone**. It is now live on the App Store at **₱99 one-time**.
 
 ## The Problem: Most Planning Tools Still Start From Someone Else’s Life
 
@@ -168,7 +168,7 @@ Finance products lose people the moment they feel slippery.
 
 ## Pricing And Current Status
 
-The planned launch price is **₱99 one-time**.
+Namna is now available on the App Store for **₱99 one-time**.
 
 That felt like the right opening move:
 
@@ -180,9 +180,9 @@ As of this update:
 
 - the support and privacy pages are live
 - the product screenshots reflect the current build
-- the App Store listing itself is **not public yet**
+- the App Store listing is public: [Namna on the App Store](https://apps.apple.com/us/app/namna/id6763838525)
 
-When that changes, the product page at [/namna/](/namna/) will be the source of truth.
+The product page at [/namna/](/namna/) remains the source of truth for the current positioning and links.
 
 ## What I Learned Building It
 

@@ -2,7 +2,7 @@
 layout: page
 title: Namna — Private Financial Planning App for Filipinos on iPhone
 permalink: /namna/
-description: "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device. Launch price: ₱99 one-time."
+description: "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device. Available on the App Store for ₱99 one-time."
 image: /images/namna-screenshots/03-home-current-plan.png
 ---
 
@@ -10,9 +10,9 @@ image: /images/namna-screenshots/03-home-current-plan.png
   <p class="namna-kicker">Private · iPhone-only · English + Filipino</p>
   <p class="namna-lede"><strong>Namna is a private financial planning app for Filipinos.</strong> It helps you understand your current plan, compare future What If changes, and keep everything on your iPhone without accounts, ads, or tracking.</p>
   <div class="namna-meta">
-    <span class="badge">Launch price: ₱99 one-time</span>
+    <span class="badge">₱99 one-time</span>
     <span class="badge">No subscription</span>
-    <span class="badge">App Store page not public yet</span>
+    <span class="badge">Available on the App Store</span>
     <span class="badge">All data stays on device</span>
   </div>
 </div>
@@ -122,18 +122,16 @@ The app also uses **take-home pay**, not gross salary, because that is the numbe
 
 ## Pricing and availability
 
-- **Launch price:** `₱99 one-time`
+- **Price:** `₱99 one-time`
 - **Business model:** no subscription
 - **Platform:** iPhone only
-- **Current status:** the support/privacy pages are live, but the App Store listing itself is not public yet
+- **Current status:** available now on the App Store
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="/contact/" class="btn btn-primary">Ask About Launch</a>
+  <a href="https://apps.apple.com/us/app/namna/id6763838525" class="btn btn-primary">View on the App Store</a>
   <a href="/namna-support/" class="btn btn-ghost">Support</a>
   <a href="/namna-privacy/" class="btn btn-ghost">Privacy Policy</a>
 </div>
-
-The App Store button will go here as soon as the listing is public.
 
 ---
 
@@ -141,7 +139,7 @@ The App Store button will go here as soon as the listing is public.
 
 Namna is independently developed by [Jeryl Donato Estopace](/). It grew out of wanting a planning tool that starts from Filipino take-home reality, stays private by default, and speaks more honestly than a generic retirement calculator.
 
-Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [GitHub](https://github.com/jeryldev)
+Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [App Store](https://apps.apple.com/us/app/namna/id6763838525)
 
 ---
 
@@ -224,10 +222,18 @@ Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [GitHub](https://g
   "applicationSubCategory": "Financial Planning",
   "operatingSystem": "iOS 15.1 or later",
   "url": "{{ site.url }}/namna/",
+  "downloadUrl": "https://apps.apple.com/us/app/namna/id6763838525",
   "image": "{{ site.url }}/images/namna-screenshots/03-home-current-plan.png",
   "inLanguage": ["en", "fil"],
   "countriesSupported": "PH",
   "isAccessibleForFree": false,
+  "offers": {
+    "@type": "Offer",
+    "price": "99",
+    "priceCurrency": "PHP",
+    "category": "One-time purchase",
+    "url": "https://apps.apple.com/us/app/namna/id6763838525"
+  },
   "author": {
     "@type": "Person",
     "name": "Jeryl Donato Estopace",
