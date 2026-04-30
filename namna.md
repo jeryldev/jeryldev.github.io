@@ -2,13 +2,13 @@
 layout: page
 title: Namna — Private Financial Planning App for Filipinos on iPhone
 permalink: /namna/
-description: "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device. Available on the App Store for ₱99 one-time."
+description: "A private financial planning app for Filipinos on iPhone. Estimate when your current money and monthly savings may be enough for the life you want, compare What If changes, and keep everything on-device."
 image: /images/namna-screenshots/03-home-current-plan.png
 ---
 
 <div class="namna-product-intro">
   <p class="namna-kicker">Private · iPhone-only · English + Filipino</p>
-  <p class="namna-lede"><strong>When will your money be enough?</strong> That question became Namna: a private financial planning app for Filipinos on iPhone.</p>
+  <p class="namna-lede"><strong>When will your money be enough for the life you want?</strong> That question became Namna: a private financial planning app for Filipinos on iPhone.</p>
   <div class="namna-meta">
     <span class="badge">₱99 one-time</span>
     <span class="badge">No subscription</span>
@@ -30,7 +30,7 @@ image: /images/namna-screenshots/03-home-current-plan.png
 
 I built Namna from a question I asked myself one day while walking:
 
-> **When will my money be enough?**
+> **When will my money be enough for the life I want?**
 
 At first, I tried answering it in an Excel file.
 
@@ -38,7 +38,7 @@ The spreadsheet helped, but it did not feel like the right home for a question l
 
 Then I started wondering if other Filipinos had been trying to answer the same question too.
 
-That became Namna.
+That became Namna: a calmer way to think about whether my current money and future savings may eventually be enough for the life I want.
 
 ## What kind of app is Namna?
 
@@ -241,7 +241,7 @@ Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [App Store](https:
   "@type": "SoftwareApplication",
   "name": "Namna",
   "alternateName": "Namna — Private Financial Planning App for Filipinos",
-  "description": "A private financial planning app for Filipinos on iPhone. Estimate when your money may be enough, compare What If changes, and keep everything on-device.",
+  "description": "A private financial planning app for Filipinos on iPhone. Estimate when your current money and monthly savings may be enough for the life you want, compare What If changes, and keep everything on-device.",
   "applicationCategory": "FinanceApplication",
   "applicationSubCategory": "Financial Planning",
   "operatingSystem": "iOS 15.1 or later",

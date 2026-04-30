@@ -3,7 +3,7 @@ layout: post
 title: "Building Namna: From a Spreadsheet Question to a Private Financial Planning App for Filipinos"
 date: 2026-04-18
 tags: [React Native, Expo, TypeScript, Personal Finance, Philippines, Mobile]
-description: "I built Namna from a simple question: when will my money be enough? What started as an Excel file became a private financial planning app for Filipinos on iPhone."
+description: "I built Namna from a simple question: when will my money be enough for the life I want? What started as an Excel file became a private financial planning app for Filipinos on iPhone."
 image: /images/namna-screenshots/03-home-current-plan.png
 excerpt: "I first tried answering a personal money question in Excel. The spreadsheet worked, but it did not feel like the right tool. That question eventually became Namna."
 ---
@@ -12,11 +12,11 @@ excerpt: "I first tried answering a personal money question in Excel. The spread
 
 I built Namna from a question I asked myself one day while walking:
 
-> **When will my money be enough?**
+> **When will my money be enough for the life I want?**
 
 Not in a dramatic way. Not as a slogan. Just as a real question.
 
-I wanted to know whether the money I already had, plus the money I could keep saving, might eventually become enough to support the kind of future I wanted.
+I wanted to know whether the money I already had, plus the money I could keep saving, might eventually become enough to support the kind of life I wanted.
 
 ## It started as an Excel file
 

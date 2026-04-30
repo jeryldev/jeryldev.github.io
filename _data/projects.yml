@@ -1,6 +1,6 @@
 - name: Namna
   tagline: Private financial planning app for Filipinos on iPhone
-  description: Private, local-first iPhone app that estimates when your current savings and future monthly contributions may be enough. Compare What If changes, add MP2/PERA/RTBs/SSS/GSIS manually, and keep everything on device.
+  description: Private, local-first iPhone app that estimates when your current money and future monthly contributions may be enough for the life you want. Compare What If changes, add MP2/PERA/RTBs/SSS/GSIS manually, and keep everything on device.
   date: 2026-04-18
   tech:
     - React Native

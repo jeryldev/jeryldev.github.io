@@ -2,7 +2,7 @@
 layout: page
 title: Namna Support
 permalink: /namna-support/
-description: "Get help with Namna — common questions about on-device storage, Excel exports, What If changes, inflation, iPhone support, and refunds. Direct email support included."
+description: "Get help with Namna — a private financial planning app for Filipinos on iPhone. Common questions about on-device storage, Excel exports, What If changes, inflation, iPhone support, and refunds."
 ---
 
 Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.

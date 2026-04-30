@@ -2,10 +2,10 @@
 layout: page
 title: Namna Privacy Policy
 permalink: /namna-privacy/
-description: "Namna collects zero personal data. Your plan stays on your iPhone using on-device storage. No cloud sync, no analytics, no ads, and no third-party tracking SDKs."
+description: "Namna collects zero personal data. Your private financial plan stays on your iPhone using on-device storage. No cloud sync, no analytics, no ads, and no third-party tracking SDKs."
 ---
 
-**Last Updated:** April 28, 2026
+**Last Updated:** April 30, 2026
 
 ## Overview
 
