@@ -3,7 +3,18 @@ layout: page
 title: Namna Support
 permalink: /namna-support/
 description: "Get help with Namna — a private financial planning app for Filipinos on iPhone. Common questions about on-device storage, Excel exports, What If changes, inflation, iPhone support, and refunds."
+image: /images/namna-store/ios-jade/06-export.png
 ---
+
+<div class="namna-page-hero">
+  <img src="/images/namna-brand/symbol-jade-2048.png" alt="Namna symbol" class="namna-page-hero-mark" />
+  <p class="namna-page-hero-copy">Support for the current iPhone build, including exports, privacy, What If changes, and local-only storage.</p>
+</div>
+
+<figure class="namna-page-shot">
+  <img src="/images/namna-store/ios-jade/06-export.png" alt="Namna export screenshot" />
+  <figcaption>Workbook export is available on demand for your own records or sharing.</figcaption>
+</figure>
 
 Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.
 
@@ -148,6 +159,44 @@ document.getElementById('support-form').addEventListener('submit', function(e) {
 </script>
 
 <style>
+  .namna-page-hero {
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 44rem;
+  }
+
+  .namna-page-hero-mark {
+    width: 104px;
+    height: 104px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .namna-page-hero-copy {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  .namna-page-shot {
+    margin: 0 0 2rem;
+  }
+
+  .namna-page-shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+
+  .namna-page-shot figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+
   .support-section {
     max-width: 900px;
     margin: 0 auto;

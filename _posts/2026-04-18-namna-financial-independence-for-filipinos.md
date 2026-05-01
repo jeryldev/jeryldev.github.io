@@ -4,11 +4,16 @@ title: "Building Namna: From a Spreadsheet Question to a Private Financial Plann
 date: 2026-04-18
 tags: [React Native, Expo, TypeScript, Personal Finance, Philippines, Mobile]
 description: "I built Namna from a simple question: when will my money be enough for the life I want? What started as an Excel file became a private financial planning app for Filipinos on iPhone."
-image: /images/namna-screenshots/03-home-current-plan.png
+image: /images/namna-store/ios-jade/02-the-answer.png
 excerpt: "I first tried answering a personal money question in Excel. The spreadsheet worked, but it did not feel like the right tool. That question eventually became Namna."
 ---
 
 > **Update — April 29, 2026:** The product has moved past its earlier “financial independence planner” framing. The clearest label now is **private financial planning app for Filipinos on iPhone**. It is now live on the App Store at **₱99 one-time**.
+
+<figure class="namna-story-hero">
+  <img src="/images/namna-store/ios-jade/02-the-answer.png" alt="Namna estimate screen showing when the current plan may be enough" />
+  <figcaption>The current build still starts with the same question, but the answer now lives in a real product instead of a spreadsheet.</figcaption>
+</figure>
 
 I built Namna from a question I asked myself one day while walking:
 
@@ -171,6 +176,21 @@ The current build helps users:
 
 It also supports both **English and Filipino** in the UI.
 
+<div class="namna-story-gallery">
+  <figure>
+    <img src="/images/namna-store/ios-jade/01-find-your-number.png" alt="Namna onboarding screenshot asking when your money may be enough" />
+    <figcaption>Onboarding opens with a plain-language setup flow.</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/namna-store/ios-jade/04-what-if.png" alt="Namna What If screenshot showing comparison against the current plan" />
+    <figcaption>What If changes make tradeoffs visible without rewriting the main plan.</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/namna-store/ios-jade/06-export.png" alt="Namna export screenshot showing workbook export" />
+    <figcaption>The export stays simple: records and sharing, not sync or restore.</figcaption>
+  </figure>
+</div>
+
 ## What I wanted the app to feel like
 
 More than anything, I wanted Namna to feel respectful.
@@ -223,3 +243,41 @@ And that feels meaningful to me.
 Namna is live on the App Store: [View Namna on the App Store](https://apps.apple.com/us/app/namna/id6763838525)
 
 If you care about private software, local-market products, or finance tools that try to speak more honestly, [say hello](/contact/).
+
+<style>
+  .namna-story-hero,
+  .namna-story-gallery figure {
+    margin: 1.75rem 0;
+  }
+
+  .namna-story-hero img,
+  .namna-story-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+
+  .namna-story-hero figcaption,
+  .namna-story-gallery figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+
+  .namna-story-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.75rem 0 2rem;
+  }
+
+  @media (min-width: 720px) {
+    .namna-story-gallery {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

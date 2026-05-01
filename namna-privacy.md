@@ -3,9 +3,20 @@ layout: page
 title: Namna Privacy Policy
 permalink: /namna-privacy/
 description: "Namna collects zero personal data. Your private financial plan stays on your iPhone using on-device storage. No cloud sync, no analytics, no ads, and no third-party tracking SDKs."
+image: /images/namna-store/ios-jade/05-privacy.png
 ---
 
 **Last Updated:** April 30, 2026
+
+<div class="namna-page-hero">
+  <img src="/images/namna-brand/symbol-jade-2048.png" alt="Namna symbol" class="namna-page-hero-mark" />
+  <p class="namna-page-hero-copy">Privacy in Namna is product-level, not policy-level theater. The app stays local, manual, and off your accounts.</p>
+</div>
+
+<figure class="namna-page-shot">
+  <img src="/images/namna-store/ios-jade/05-privacy.png" alt="Namna privacy screenshot" />
+  <figcaption>The current build keeps planning local on your phone: no account, no ads, no tracking, no cloud sync.</figcaption>
+</figure>
 
 ## Overview
 
@@ -138,3 +149,43 @@ Apple, iPhone, and iOS are trademarks of Apple Inc., registered in the U.S. and 
 ---
 
 [← Back to Namna](/namna/)
+
+<style>
+  .namna-page-hero {
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 44rem;
+  }
+
+  .namna-page-hero-mark {
+    width: 104px;
+    height: 104px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .namna-page-hero-copy {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  .namna-page-shot {
+    margin: 0 0 2rem;
+  }
+
+  .namna-page-shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+
+  .namna-page-shot figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+</style>

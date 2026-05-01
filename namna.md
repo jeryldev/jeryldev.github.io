@@ -3,7 +3,7 @@ layout: page
 title: Namna — Private Financial Planning App for Filipinos on iPhone
 permalink: /namna/
 description: "A private financial planning app for Filipinos on iPhone. Estimate when your current money and monthly savings may be enough for the life you want, compare What If changes, and keep everything on-device."
-image: /images/namna-screenshots/03-home-current-plan.png
+image: /images/namna-store/ios-jade/02-the-answer.png
 ---
 
 <div class="namna-product-intro">
@@ -18,12 +18,12 @@ image: /images/namna-screenshots/03-home-current-plan.png
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/namna-icon.png" alt="Namna App Icon" style="width: 150px; height: 150px; border-radius: 25px;" />
+  <img src="/images/namna-brand/icon-jade-1024.png" alt="Namna App Icon" style="width: 150px; height: 150px; border-radius: 25px;" />
 </div>
 
 <figure class="namna-shot namna-shot-hero">
-  <img src="/images/namna-screenshots/03-home-current-plan.png" alt="Namna home screen showing the current plan estimate and chart" />
-  <figcaption>The current-plan screen leads with the estimate, then shows the chart and gentle next-step prompts.</figcaption>
+  <img src="/images/namna-store/ios-jade/02-the-answer.png" alt="Namna hero screenshot showing the current estimate and planning summary" />
+  <figcaption>The current build answers the core question directly, then explains what to change next.</figcaption>
 </figure>
 
 ## Why I made this
@@ -85,40 +85,28 @@ All screenshots below were taken from the current 6.5-inch build.
 
 <div class="namna-gallery">
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/01-welcome.png" alt="Namna onboarding welcome screen" />
-    <figcaption>Onboarding starts with a short, calm setup.</figcaption>
+    <img src="/images/namna-store/ios-jade/01-find-your-number.png" alt="Namna onboarding screenshot inviting the user to find their number" />
+    <figcaption>Onboarding starts with one practical question instead of finance jargon.</figcaption>
   </figure>
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/04-plan-edit-allocation.png" alt="Namna plan edit screen showing future savings allocation" />
-    <figcaption>Plan editing makes future savings assumptions visible instead of hidden.</figcaption>
+    <img src="/images/namna-store/ios-jade/02-the-answer.png" alt="Namna estimate screen showing when current money may be enough" />
+    <figcaption>The estimate screen explains whether the current plan is close, stretched, or still early.</figcaption>
   </figure>
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/05-money-today-overview.png" alt="Namna Money Today overview screen" />
-    <figcaption>Money Today summarizes what you already have in one place.</figcaption>
+    <img src="/images/namna-store/ios-jade/03-filipino-realities.png" alt="Namna screenshot highlighting Filipino financial realities like MP2 and SSS" />
+    <figcaption>The app is built around Filipino realities like MP2, SSS, GSIS, RTBs, and digital banks.</figcaption>
   </figure>
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/06-money-today-detail.png" alt="Namna Money Today item detail screen" />
-    <figcaption>Each money item opens into a clean detail view with edit and delete actions.</figcaption>
+    <img src="/images/namna-store/ios-jade/04-what-if.png" alt="Namna screenshot showing a What If scenario comparison" />
+    <figcaption>What If changes stay separate from the main plan, so comparisons remain clean.</figcaption>
   </figure>
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/07-what-if-overview.png" alt="Namna What If overview screen" />
-    <figcaption>What If keeps saved changes separate from your current plan.</figcaption>
+    <img src="/images/namna-store/ios-jade/05-privacy.png" alt="Namna privacy screenshot showing private on-device storage" />
+    <figcaption>Privacy is part of the product: no account, no ads, no tracking, no cloud dependency.</figcaption>
   </figure>
   <figure class="namna-shot">
-    <img src="/images/namna-screenshots/02-what-if-editor.png" alt="Namna What If editor screen" />
-    <figcaption>You can build a change around future costs or money changes without touching the main plan.</figcaption>
-  </figure>
-  <figure class="namna-shot">
-    <img src="/images/namna-screenshots/08-what-if-detail.png" alt="Namna What If detail screen" />
-    <figcaption>Each saved change has its own view page before you edit it.</figcaption>
-  </figure>
-  <figure class="namna-shot">
-    <img src="/images/namna-screenshots/09-what-if-chart.png" alt="Namna What If chart comparing current plan and one saved change" />
-    <figcaption>The chart compares your current plan with one What If change at a time.</figcaption>
-  </figure>
-  <figure class="namna-shot">
-    <img src="/images/namna-screenshots/10-help-export.png" alt="Namna help screen describing export and glossary features" />
-    <figcaption>Help explains the app and the workbook export in plain language.</figcaption>
+    <img src="/images/namna-store/ios-jade/06-export.png" alt="Namna export screenshot describing workbook export" />
+    <figcaption>Exports are readable and user-controlled, with no restore claims and no hidden sync.</figcaption>
   </figure>
 </div>
 
@@ -247,7 +235,7 @@ Connect: [LinkedIn](https://www.linkedin.com/in/jeryldev/) · [App Store](https:
   "operatingSystem": "iOS 15.1 or later",
   "url": "{{ site.url }}/namna/",
   "downloadUrl": "https://apps.apple.com/us/app/namna/id6763838525",
-  "image": "{{ site.url }}/images/namna-screenshots/03-home-current-plan.png",
+  "image": "{{ site.url }}/images/namna-store/ios-jade/02-the-answer.png",
   "inLanguage": ["en", "fil"],
   "countriesSupported": "PH",
   "isAccessibleForFree": false,
